@@ -1,0 +1,17 @@
+{{#> main}}
+	{{#*inline "main"}}
+
+	{{#> ukSection heading="Internal Pages" size="large"}}
+		{{#*inline "out"}}
+		{{> nbItems items=items.children}}
+		{{/inline}}
+	{{/ukSection}}
+
+	{{#> ukSection heading="Latest News" size="large"}}
+		{{#*inline "out"}}
+		{{> nbItems items=items.posts}}
+		{{/inline}}
+	{{/ukSection}}
+
+	{{/inline}}
+{{/main}}
