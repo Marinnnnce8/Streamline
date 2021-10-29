@@ -1,0 +1,45 @@
+@mixin hook-accordion {
+	li {
+		background-color: $white;
+		padding: $global-margin $global-gutter;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $grey-border;
+		}
+
+		&.uk-open {
+
+			.uk-svg {
+				transform: rotate(180deg);
+			}
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: $normal;
+
+			&:first-of-type {
+				margin-top: $global-small-margin;
+			}
+
+			&:last-of-type {
+				margin-bottom: $global-gutter;
+			}
+		}
+
+		.uk-svg {
+			width: 17px;
+			height: 17px;
+			min-width: 17px;
+			color: $secondary;
+			transition: $transition;
+			position: relative;
+		}
+	}
+}
+
+@mixin hook-accordion-title {
+	font-weight: $normal;
+	letter-spacing: -.01em;
+	transition: $transition;
+}

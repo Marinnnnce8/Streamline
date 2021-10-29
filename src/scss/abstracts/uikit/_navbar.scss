@@ -1,0 +1,30 @@
+.uk-navbar {
+	* {
+		transition: $transition;
+	}
+}
+
+@mixin hook-navbar-nav-item {
+	font-weight: $bold;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+
+	.icon {
+		height: 8px;
+		color: $secondary;
+		margin-left: 6px;
+		position: relative;
+	}
+
+	&[aria-expanded='true'] {
+		.icon {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+@mixin hook-navbar-dropdown-nav-item {
+	font-size: 18px;
+	font-weight: $normal;
+	line-height: 1.3;
+}

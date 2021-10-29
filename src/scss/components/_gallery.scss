@@ -1,4 +1,7 @@
 .gallery {
+	.uk-container-small h2 {
+		margin-bottom: $global-gutter;
+	}
 
 	&-wrap {
 		margin: 0 -2px;

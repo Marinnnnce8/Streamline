@@ -4,12 +4,13 @@
 
 // Background Icon
 @mixin bg-icon($icon) {
-	background-image: url('data:image/svg+xml;utf8,' + $icon);
+	background-image: url('data:image/svg+xml;utf8,'+ $icon);
 	background-repeat: no-repeat;
 }
 
 // Hover
 @mixin hover {
+
 	&:hover,
 	&:focus,
 	&:active,
@@ -21,8 +22,10 @@
 
 // Image caption
 @mixin image-caption {
-	font-size: 0.8rem;
-	padding: $global-small-margin;
+	font-size: 16px;
+	padding: 5px;
+	color: rgba($primary, .7);
+	line-height: 1.4;
 	text-align: center;
 }
 
@@ -39,6 +42,94 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+@mixin link-hover {
+	position: relative;
+	text-decoration: none;
+	color: $secondary;
+	transition: $transition;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: $secondary;
+		z-index: -1;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+	}
+
+	&::before {
+		width: 0%;
+		transition: ease .4s;
+	}
+
+	&::after {
+		width: 100%;
+		transition: ease .6s;
+	}
+
+	@include hover {
+
+		&::before {
+			width: 100%;
+		}
+
+		&::after {
+			left: 100%;
+			width: 0%;
+			transition: ease .2s;
+		}
+	}
+}
+
+// Slidenav Buttons
+@mixin slidenav-buttons {
+	width: 55px;
+	height: 55px;
+	margin-left: 0;
+	margin-right: 0;
+
+	svg {
+		color: $secondary;
+		transition: $transition;
+		height: 27px;
+		width: 27px;
+
+		* {
+			stroke-width: 4px;
+		}
+	}
+
+	@include hover {
+		text-decoration: none;
+
+		svg {
+			color: $primary;
+		}
+	}
+
+	@media (max-width: $breakpoint-large) {
+		margin: 15px 0;
+
+		@include hover {
+
+			svg {
+				color: $white;
+			}
+		}
+
+		&.uk-slidenav-previous {
+			right: auto;
+		}
+
+		&.uk-slidenav-next {
+			left: auto;
+			right: 0;
+		}
+	}
 }
 
 
@@ -68,3 +159,12 @@
 
 // Utilities
 @import 'uikit/text';
+
+// Slideshow
+@import 'uikit/slideshow';
+
+// Accordion
+@import 'uikit/accordion';
+
+// Alert
+@import 'uikit/alert';

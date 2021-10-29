@@ -20,23 +20,24 @@ $breakpoint-mobile: 479px; // Custom
 $global-font-family: $font-default;
 $global-font-size: $font-size;
 $global-line-height: $line-height;
-$global-2xlarge-font-size: 2.625rem;
-$global-xlarge-font-size: 2rem;
-$global-large-font-size: 1.5rem;
-$global-medium-font-size: 1.25rem;
-$global-small-font-size: 0.875rem;
+$global-2xlarge-font-size: 70px;
+$global-xlarge-font-size: 54px;
+$global-large-font-size: 34px;
+$global-medium-font-size: 26px;
+$global-small-font-size: 18px;
 
 // Colors
-$global-color: $black;
-$global-emphasis-color: $black;
-$global-muted-color: $grey;
+$global-color: $primary;
+$global-emphasis-color: $primary;
+$global-muted-color: $primary;
 $global-link-color: $primary;
 $global-link-hover-color: $primary;
 $global-inverse-color: $white;
+$global-secondary-color: $secondary;
 
 // Backgrounds
-$global-background: $white;
-$global-muted-background: $off-white;
+$global-background: $cold-grey;
+$global-muted-background: $white;
 $global-primary-background: $primary;
 $global-secondary-background: $secondary;
 $global-success-background: $success;
@@ -67,12 +68,23 @@ $global-control-large-height: 55px;
 //
 // Base
 //
-$base-body-font-weight: 400;
+$base-body-color: $primary;
+$base-body-font-weight: 300;
 $base-link-hover-text-decoration: underline;
 $base-strong-font-weight: $bold;
 $base-code-color: inherit;
 $base-em-color: inherit;
 $base-selection-background: $secondary;
+$base-h2-line-height: 1.2;
+$base-h3-line-height: 1.2;
+$base-h4-line-height: 1.2;
+$base-h5-line-height: 1.2;
+$base-h6-line-height: 1.2;
+$base-h5-font-size: 20px;
+$base-blockquote-font-size: 30px;
+$base-blockquote-margin-vertical: $global-gutter;
+$text-small-font-size: 16px;
+$text-small-line-height: 1.4; 
 
 
 //
@@ -94,8 +106,8 @@ $form-label-font-size: $global-small-font-size;
 //
 $container-max-width: 1200px;
 $container-xsmall-max-width: 750px;
-$container-small-max-width: 900px;
-$container-large-max-width: 1400px;
+$container-small-max-width: 785px;
+$container-large-max-width: 1410px;
 $container-xlarge-max-width: 1600px;
 $container-padding-horizontal: 15px;
 $container-padding-horizontal-s: $global-gutter;
@@ -108,11 +120,11 @@ $container-padding-horizontal-m: $global-medium-gutter;
 $alert-primary-background: $global-primary-background;
 $alert-primary-color: $white;
 $alert-success-background: $global-success-background;
-$alert-success-color: $white;
+$alert-success-color: $primary;
 $alert-warning-background: $global-warning-background;
-$alert-warning-color: $white;
+$alert-warning-color: $primary;
 $alert-danger-background: $global-danger-background;
-$alert-danger-color: $white;
+$alert-danger-color: $primary;
 
 
 //
@@ -135,7 +147,6 @@ $breadcrumb-divider-color: $global-color;
 
 //
 // Lightbox
-//
 $lightbox-item-max-width: 95vw;
 $lightbox-item-max-height: 85vh;
 
@@ -151,7 +162,38 @@ $animation-fast-duration: $speed-fast;
 //
 // Text
 //
-$text-lead-font-size: $global-large-font-size;
+$text-lead-font-size: $global-medium-font-size;
 $text-lead-line-height: $global-line-height;
 $text-lead-color: $global-emphasis-color;
 $text-meta-color: $global-muted-color;
+$text-meta-line-height: 1.2;
+
+
+//
+// Navbar
+//
+$navbar-nav-item-height: 1.1;
+$navbar-nav-item-font-size: 16px;
+$navbar-nav-item-hover-color: $secondary;
+$navbar-nav-item-onclick-color: $secondary;
+$navbar-nav-item-active-color: $secondary;
+$navbar-dropdown-nav-item-hover-color: $secondary;
+$navbar-dropdown-nav-item-active-color: $secondary;
+$navbar-dropdown-background: $white;
+
+
+//
+// Table
+//
+$table-header-cell-font-size: 14px;
+$table-header-cell-font-weight: $bold;
+$table-header-cell-color: $white;
+
+
+//
+// Accordion
+//
+$accordion-item-margin-top: 0;
+$accordion-title-line-height: 1.2;
+$accordion-title-color: $primary;
+$accordion-title-hover-color: rgba($primary, .7);

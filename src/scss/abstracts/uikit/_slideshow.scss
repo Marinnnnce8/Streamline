@@ -1,0 +1,11 @@
+.uk-slideshow {
+	.uk-overlay {
+		background: linear-gradient(360deg, rgba($primary, .9) 0%, rgba($ink, 0) 100%);
+		font-size: 18px;
+		color: $white;
+	}
+
+	.uk-slidenav {
+		@include slidenav-buttons;
+	}
+}

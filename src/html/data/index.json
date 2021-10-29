@@ -1,19 +1,14 @@
 {
 	"nb": {
-		"siteName": "Template Site",
-		"clientName": "NB Communication Ltd"
+		"siteName": "Streamline",
+		"clientName": "Streamline Shipping Tour"
 	},
 	"ukContainer": "small",
 	"cta": "Find out more",
 	"menu": [
 		{
-			"name": "home",
-			"title": "Home",
-			"url": "home.html"
-		},
-		{
-			"name": "about",
-			"title": "About",
+			"name": "services",
+			"title": "Services",
 			"children": [
 				{
 					"name": "child",
@@ -22,8 +17,92 @@
 			]
 		},
 		{
-			"name": "contact",
-			"title": "Contact"
+			"name": "sectors",
+			"title": "Sectors",
+			"children": [
+				{
+					"name": "parcels-and-home-delivery",
+					"title": "Parcels and Home Delivery"
+				},
+				{
+					"name": "pallets-and-local-distribution",
+					"title": "Pallets and Local Distribution"
+				},
+				{
+					"name": "uk-and-europe-haulage",
+					"title": "UK and Europe Haulage"
+				},
+				{
+					"name": "international-forwarding",
+					"title": "International Forwarding"
+				},
+				{
+					"name": "ship-agency-and-cargo-handling",
+					"title": "Ship Agency and Cargo Handling"
+				},
+				{
+					"name": "customs-clearance",
+					"title": "Customs Clearance"
+				},
+				{
+					"name": "chemical-production-and-supply",
+					"title": "Chemical Production and Supply"
+				}
+			]
+		},
+		{
+			"name": "orkney-and-shetland",
+			"title": "Orkney & Shetland",
+			"url": "orkney-and-shetland"
+		},
+		{
+			"name": "about",
+			"title": "About",
+			"children": [
+				{
+					"name": "parcels-and-home-delivery",
+					"title": "Parcels and Home Delivery"
+				},
+				{
+					"name": "pallets-and-local-distribution",
+					"title": "Pallets and Local Distribution"
+				},
+				{
+					"name": "uk-and-europe-haulage",
+					"title": "UK and Europe Haulage"
+				},
+				{
+					"name": "international-forwarding",
+					"title": "International Forwarding"
+				}
+			]
+		},
+		{
+			"name": "our-network",
+			"title": "Our Network",
+			"children": [
+				{
+					"name": "parcels-and-home-delivery",
+					"title": "Parcels and Home Delivery"
+				},
+				{
+					"name": "pallets-and-local-distribution",
+					"title": "Pallets and Local Distribution"
+				},
+				{
+					"name": "uk-and-europe-haulage",
+					"title": "UK and Europe Haulage"
+				},
+				{
+					"name": "international-forwarding",
+					"title": "International Forwarding"
+				}
+			]
+		},
+		{
+			"name": "projects",
+			"title": "Projects",
+			"url": "projects"
 		}
 	],
 	"social": [
@@ -129,10 +208,10 @@
 		],
 		"slideshow": [
 			{
-				"href": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg",
-				"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.1200x675.jpg",
-				"width": "1200",
-				"height": "675",
+				"href": "./img/slideshow-1.jpg",
+				"src": "./img/slideshow-1.jpg",
+				"width": "786",
+				"height": "525",
 				"caption": "This slideshow image has a caption."
 			},
 			{
@@ -154,6 +233,37 @@
 				"src": "https://aws.nbcommunication.com/template/img/placeholder-city.1200x675.jpg",
 				"width": "1200",
 				"height": "675"
+			}
+		],
+		"accordions": [
+			{
+				"opened": true,
+				"title": "Excepteur sint occaecat cupidatat non proident",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Duis aute irure dolor",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Sed ut perspiciatis unde omnis iste natus error sit accusantium",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Quis autem vel eum iure reprehenderit",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			}
+		],
+		"lightbox": [
+			{
+				"src": "https://youtu.be/jmOuxZAJifA",
+				"caption": "Video caption",
+				"img": "./img/video-banner.jpg",
+				"width": "788",
+				"height": "532",
+				"alt": "This is video",
+				"label": "Get to know Us",
+				"title": "Streamline Embeded Video"
 			}
 		]
 	}

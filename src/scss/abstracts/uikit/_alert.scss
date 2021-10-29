@@ -1,0 +1,11 @@
+.uk-alert {
+	border-radius: $border-radius-small;
+	font-size: 18px;
+	font-weight: $normal;
+	display: flex;
+	align-items: center;
+
+	.icon {
+		margin-right: $global-margin;
+	}
+}

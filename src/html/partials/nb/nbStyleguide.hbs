@@ -2,11 +2,15 @@
 {{#> content}}
 	{{#*inline "body"}}
 
+	<h1>Heading 1</h1>
+
+	{{> renderIntro}}
+
 	<p>Lorem ipsum dolor sit amet, <strong>here's some bold text</strong>. Aliquam at ligula <em>here's some italic text</em>. Nulla facilisi. In in turpis non eros vehicula adipiscing in <em><strong>feugiat ligula</strong></em>. Vivamus et nulla<sub>2</sub> ultricies<sup>2</sup>, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna <a href="#">example link</a>. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
 
 	<figure class="align_center hidpi">
 		<a href="{{aws}}/img/placeholder-castle-banner.jpg">
-			<img alt="This is a centre aligned image" src="{{aws}}/img/placeholder-castle-banner.jpg" width="960"/>
+			<img alt="This is a centre aligned image" src="./img/center-image.jpg" width="787" height="518"/>
 		</a>
 		<figcaption>This is a centred image</figcaption>
 	</figure>
@@ -15,7 +19,7 @@
 
 	<figure class="align_right hidpi">
 		<a href="{{aws}}/img/placeholder-columns.jpg">
-			<img alt="This is a right aligned image" src="{{aws}}/img/placeholder-columns.300x0-is-hidpi.jpg" width="300"/>
+			<img alt="This is a right aligned image" src="./img/right-image.jpg" width="373" height="275"/>
 		</a>
 		<figcaption>This is a right-aligned image</figcaption>
 	</figure>
@@ -26,7 +30,7 @@
 
 	<figure class="align_left hidpi">
 		<a href="{{aws}}/img/placeholder-city.jpg">
-			<img alt="This is a left aligned image" src="{{aws}}/img/placeholder-city.300x0-is-hidpi.jpg" width="300"/>
+			<img alt="This is a left aligned image" src="./img/left-image.jpg" width="373" height="250"/>
 		</a>
 		<figcaption>This is a left-aligned image</figcaption>
 	</figure>
@@ -42,7 +46,7 @@
 	<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna example link. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
 
 	<blockquote>
-		<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna <a href="#">example link</a>. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
+		<p>“Blockquote. Style to be good must be clear. Clearness is secured by using words that are current and ordinary.”</p>
 	</blockquote>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ligula eleifend elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui.</p>
@@ -50,7 +54,7 @@
 	{{/inline}}
 {{/content}}
 
-{{> gallery items=items.gallery title="Gallery" caption="A Gallery Caption"}}
+{{> gallery items=items.gallery size="large" title="Gallery" caption="Style of an image title caption. Photo by Photographer Name"}}
 
 {{#> content}}
 	{{#*inline "body"}}
@@ -141,25 +145,19 @@
 
 	<p class="uk-text-small">*This is some small text</p>
 
+	{{> accordions items=items.accordions title="FAQ"}}
+
 	<h2>Messages</h2>
 
-	<p class="uk-alert uk-alert-primary"><strong>Primary Text.</strong> This text is a message to the website user</p>
+	<p class="uk-alert uk-alert-primary">{{> renderIcon name="file"}}Primary Text. This text is a message to the website user</p>
 
-	<p class="uk-alert uk-alert-success"><strong>Success Text.</strong> This text is providing a positive message to the user</p>
+	<p class="uk-alert uk-alert-success">{{> renderIcon name="success"}}Success Text. This text is providing a positive message to the user</p>
 
-	<p class="uk-alert uk-alert-warning"><strong>Warning Text.</strong> The text is providing a gentle warning to the user</p>
+	<p class="uk-alert uk-alert-warning">{{> renderIcon name="warning"}}Warning Text. The text is providing a gentle warning to the user</p>
 
-	<p class="uk-alert uk-alert-danger"><strong>Danger Text.</strong> The text is providing an error alert to the user</p>
+	<p class="uk-alert uk-alert-danger">{{> renderIcon name="info"}}Danger Text. The text is providing an error alert to the user</p>
 
-	<h3>Embedded Videos</h3>
-
-	<div class="responsive yt">
-		<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?modestbranding=1&rel=0&feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-
-	<div class="responsive vm">
-		<iframe src="https://player.vimeo.com/video/63655754?dnt=1&app_id=122963" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Placeholder visual blip"></iframe>
-	</div>
+	{{> lightbox items=items.lightbox title="Embedded Videos"}}
 
 	{{/inline}}
 {{/content}}

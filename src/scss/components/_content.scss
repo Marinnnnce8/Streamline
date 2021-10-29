@@ -44,6 +44,17 @@
 		text-align: center;
 	}
 
+	p,
+	li {
+		>a:not(.uk-accordion-title) {
+			@include link-hover;
+		}
+	}
+
+	ul li::marker {
+		color: $secondary;
+	}
+
 	@media (max-width: $breakpoint-mobile) {
 
 		.align_right,
