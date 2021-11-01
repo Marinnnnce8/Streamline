@@ -174,7 +174,7 @@ $text-meta-line-height: 1.2;
 //
 // Navbar
 //
-$navbar-nav-item-height: 1.1;
+$navbar-nav-item-height: 60px;
 $navbar-nav-item-padding-horizontal: 7px;
 $navbar-nav-item-font-size: 14px;
 $navbar-nav-item-hover-color: $secondary;
@@ -183,6 +183,7 @@ $navbar-nav-item-active-color: $secondary;
 $navbar-dropdown-nav-item-hover-color: $secondary;
 $navbar-dropdown-nav-item-active-color: $secondary;
 $navbar-dropdown-background: $white;
+$navbar-dropdown-width: 296px;
 
 
 //
@@ -223,3 +224,11 @@ $accordion-item-margin-top: 0;
 $accordion-title-line-height: 1.2;
 $accordion-title-color: $primary;
 $accordion-title-hover-color: rgba($primary, .7);
+
+
+//
+// Search
+//
+$search-default-height: 56px;
+$search-default-background: $off-white;
+$search-default-padding-horizontal: $global-margin;

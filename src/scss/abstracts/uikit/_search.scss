@@ -1,0 +1,15 @@
+.uk-search {
+	max-width: 280px;
+	width: 100%;
+
+	.uk-icon {
+		margin-right: $global-margin;
+		width: 17px;
+	}
+}
+
+.uk-search-input {
+	border: 1px solid $primary;
+	border-radius: $border-radius-small;
+	font-size: 18px;
+}

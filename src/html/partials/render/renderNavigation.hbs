@@ -4,7 +4,6 @@
 	<li class="{{#if children}}uk-parent{{/if}}{{#if (eq ../active name)}} uk-active{{/if}}">
 		<a href="{{default url "#"}}"{{#if children}} class="uk-flex uk-flex-middle"{{/if}}>
 			{{title}}
-			{{#if children}}{{> renderIcon name="chevron-down"}}{{/if}}
 		</a>
 		{{#if children}}
 		{{> renderNavigation items=children mobile=../mobile active=../active level=1}}
