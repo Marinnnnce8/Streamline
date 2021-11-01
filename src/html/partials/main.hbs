@@ -22,7 +22,7 @@
 	<div>
 
 		<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
-			<nav class="uk-background-primary nav-top uk-flex uk-flex-right uk-flex-middle">
+			<nav class="uk-background-primary nav-top uk-flex uk-flex-right uk-flex-middle uk-visible@m">
 				<div class="uk-flex uk-flex-right uk-flex-middle">
 					<div class="uk-flex uk-flex-middle">
 						<a class="uk-text-small" href="#">News</a>
@@ -35,10 +35,10 @@
 				</div>
 				{{> ukButton style="secondary" label="Get a quote" icon="arrow-right"}}
 			</nav>
-			<nav class="uk-navbar-container uk-navbar" data-uk-navbar>
+			<nav class="uk-navbar-container uk-navbar uk-flex-between" data-uk-navbar>
 
 				<div class="uk-navbar-left">
-					<a href="./" class="uk-navbar-item uk-logo">
+					<a href="./" class="uk-navbar-item uk-logo uk-position-relative">
 						<img src="{{logo}}" alt="{{nb.siteName}} Logo">
 					</a>
 				</div>
@@ -47,9 +47,12 @@
 					<div id="nav" class="uk-visible@m">
 						{{> renderNavigation items=menu active=page.name}}
 					</div>
-					<a href="#mmenu" class="uk-navbar-toggle uk-hidden@m" aria-label="Toggle Navigation">
-						<span data-uk-navbar-toggle-icon></span>
-						<span class="uk-hidden" data-uk-close></span>
+					<div class="uk-flex uk-flex-middle">
+						<a href="#" class="circle-button uk-border-circle uk-flex uk-flex-middle uk-flex-center uk-margin-small-left" aria-label="Search">{{> renderIcon name="search"}}</a>
+						<a href="#" class="circle-button uk-border-circle uk-flex uk-flex-middle uk-flex-center uk-margin-small-left uk-visible@m" aria-label="Login">{{> renderIcon name="user"}}</a>
+					</div>
+					<a href="#" class="uk-navbar-toggle uk-position-relative uk-hidden@m uk-border-circle uk-margin-small-left" aria-label="Toggle Navigation" data-uk-toggle="target: #mmenu;cls: menu-hidden;">
+						<span class="uk-position-center" role="presentation"></span>
 					</a>
 				</div>
 
@@ -96,8 +99,15 @@
 		</footer>
 	</div>
 
-	<div id="mmenu" class="uk-hidden">
-		{{> renderNavigation items=menu mobile=true active=page.name}}
+	<div class="mmenu-overlay uk-hidden">
+		<div id="mmenu">
+			{{!-- <form class="uk-search uk-search-default uk-margin-left uk-hidden@m">
+				<span class="uk-search-icon-flip" data-uk-search-icon></span>
+				<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
+			</form>			 --}}
+			{{> renderNavigation items=menu mobile=true active=page.name}}
+		</div>
+		<div class="mmenu-bg" role="presentation"></div>
 	</div>
 
 	<svg class="svg">
