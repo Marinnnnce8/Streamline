@@ -118,6 +118,7 @@
 	height: 44px;
 	transition: $transition;
 	z-index: 1001;
+	min-height: 0;
 
 	span,
 	.icon {

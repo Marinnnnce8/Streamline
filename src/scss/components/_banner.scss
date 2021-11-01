@@ -2,20 +2,66 @@
 	min-height: 320px;
 	// clip-path: url('#bannerShapeTop');
 	// z-index: -1;
-	
+
 	&:not(.banner-home) {
 		h1 {
 			font-weight: $light;
 		}
 	}
 
-	.shape-bottom {
+	// .shape-bottom {
+	// 	position: absolute;
+	// 	left: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	bottom: 0;
+	// 	background-color: $primary;
+	// 	clip-path: url('#bannerShape');
+	// }
+	.shape-top {
+		position: absolute;
 		left: 0;
-		bottom: 100%;
+		top: 0;
 		width: 100%;
+		bottom: 0;
+		// background-color: $primary;
+		clip-path: url('#heroShape');
+	}
+
+	.shape-middle {
+		position: absolute;
+		left: 0;
+		bottom: -3px;
+		width: 100%;
+		height: 160px;
+		background-color: $secondary;
+		clip-path: url('#goldHeroShape');
+	}
+
+	.shape-bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 110px;
 		background-color: $primary;
-		clip-path: url('#bannerShapeTop');
-		transform: translateY(63%);
+		clip-path: url('#blueHeroShape');
+		transform: translateY(15%);
+	}
+
+	&-half {
+		.shape-top {
+			&::before {
+				position: absolute;
+				right: 0;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				background-color: $primary;
+				content: '';
+				z-index: 0;
+			}
+		}
 	}
 
 	@media (min-width: $breakpoint-small) {

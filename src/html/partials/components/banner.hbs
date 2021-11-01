@@ -1,13 +1,24 @@
-<div class="banner uk-cover-container uk-background-primary uk-position-relative uk-light{{#if (eq page.name "home")}} banner-home{{/if}}{{#if (eq page.banner.plain)}} banner-plain{{/if}}{{#if page.banner.halfImg}} banner-half{{/if}}">
-	<span class="shape-bottom" role="presentation"></span>
-	{{!-- {{#if (eq page.name "home")}} --}}
+<div class="banner uk-position-relative uk-light{{#if (eq page.name "home")}} banner-home{{/if}}{{#if (eq page.banner.plain)}} banner-plain{{/if}}{{#if page.banner.halfImg}} banner-half{{/if}}">
+	<div class="shape-top uk-cover-container" role="presentation">
 		{{#if page.banner.halfImg}}
 			<div class="banner-img uk-overflow-hidden">
 		{{/if}}
-				<img src="{{#if page.banner.src}}{{page.banner.src}}{{else}}{{aws}}/img/placeholder-castle-banner.jpg{{/if}}" data-uk-cover alt="">
+			<img src="{{#if page.banner.src}}{{page.banner.src}}{{else}}{{aws}}/img/placeholder-castle-banner.jpg{{/if}}" data-uk-cover alt="">
 		{{#if page.banner.halfImg}}
 			</div>
 		{{/if}}
+	</div>
+	<span class="shape-middle" role="presentation"></span>
+	<span class="shape-bottom" role="presentation"></span>
+	{{!-- <span class="shape-bottom" role="presentation"></span> --}}
+	{{!-- {{#if (eq page.name "home")}} --}}
+		{{!-- {{#if page.banner.halfImg}}
+			<div class="banner-img uk-overflow-hidden">
+		{{/if}}
+			<img src="{{#if page.banner.src}}{{page.banner.src}}{{else}}{{aws}}/img/placeholder-castle-banner.jpg{{/if}}" data-uk-cover alt="">
+		{{#if page.banner.halfImg}}
+			</div>
+		{{/if}} --}}
 		<div class="uk-position-relative uk-visible@l">
 			{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
 				{{#*inline "out"}}

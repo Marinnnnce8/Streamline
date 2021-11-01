@@ -6,6 +6,10 @@
 	font-weight: $bold;
 }
 
+@mixin hook-base-h5 {
+	font-weight: $bold;
+}
+
 @mixin hook-base-h6 {
 	font-weight: $bold;
 	text-transform: uppercase;

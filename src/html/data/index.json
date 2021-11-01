@@ -1,7 +1,7 @@
 {
 	"nb": {
 		"siteName": "Streamline",
-		"clientName": "Streamline Shipping Tour"
+		"clientName": "Streamline Shipping Group Ltd"
 	},
 	"ukContainer": "small",
 	"cta": "Find out more",
@@ -119,6 +119,20 @@
 		"Terms & Conditions",
 		"Privacy Policy",
 		"Disclaimer"
+	],
+	"links": [
+		{
+			"name": "contact",
+			"link": "Contact"
+		},
+		{
+			"name": "vacancy",
+			"link": "Vacancies"
+		},
+		{
+			"name": "pin",
+			"link": "Locations"
+		}
 	],
 	"items": {
 		"children": [

@@ -83,35 +83,90 @@
 
 		</main>
 
-		<footer class="footer uk-padding-large uk-padding-remove-horizontal">
-			<div class="uk-container uk-text-center">
+		<footer class="footer uk-position-relative">
+			<span class="shape-top" role="presentation"></span>
+			<span class="shape-bottom" role="presentation"></span>
+			<div class="footer-inner uk-position-relative">
+				<div class="uk-container">
 
-				<div class="legal uk-margin-small-bottom">
-					<ul>
-					{{#each legal}}
-						<li>
-							<a href="#">{{this}}</a>
-						</li>
-					{{/each}}
-					</ul>
+					<div class="footer-top">
+						{{#> ukGrid class="uk-grid-medium uk-flex-middle uk-child-width-1-2@m"}}
+							{{#*inline "cells"}}
+								<div class="uk-h3">Subscribe to a Newsletter</div>
+								<div class="uk-text-right@m">
+									{{> ukButton label="Subscribe" icon="arrow-right" size="large" style="secondary"}}
+								</div>
+							{{/inline}}
+						{{/ukGrid}}						
+					</div>
+
+					<div class="footer-middle">
+						{{#> ukGrid class="uk-grid-medium uk-child-width-1-2@m"}}
+							{{#*inline "cells"}}
+							<div>
+								{{#> ukGrid class="uk-grid-medium uk-child-width-1-2@s"}}
+									{{#*inline "cells"}}
+										<div>
+											<ul class="links uk-padding-remove-left">
+											{{#each links}}
+												<li class="{{#if @last}}uk-margin-small-bottom{{else}}uk-margin-bottom{{/if}}">
+													<a href="#">{{> renderIcon name=name}}{{link}}</a>
+												</li>
+											{{/each}}
+											</ul>
+										</div>
+										<div>
+											<div class="uk-text-small uk-text-bold">Streamline Shipping Group Ltd</div>
+											<div class="uk-text-small">Streamline Terminal</div>
+											<div class="uk-text-small">Blaikies Quay</div>
+											<div class="uk-text-small">Aberdeen</div>
+											<div class="uk-text-small uk-margin-bottom">AB11 5PU</div>
+
+											<a href="tel:+4401224211506" class="uk-button uk-button-text">+44 (0)1224 211 506</a>
+											<a href="mailto:getaquote@streamlinegroup.co.uk" class="uk-button uk-button-text">getaquote@streamlinegroup.co.uk</a>
+										</div>
+									{{/inline}}
+								{{/ukGrid}}
+							</div>
+							<div>
+								<div class="uk-flex uk-flex-right uk-flex-middle uk-flex-wrap">
+									<div class="social">
+										<a class="uk-flex-inline uk-flex-middle uk-margin-small-bottom" href="#"><span class="uk-border-circle uk-margin-small-right uk-flex-inline uk-flex-center uk-flex-middle">{{> renderIcon name="facebook"}}</span>Facebook</a>
+										<a class="uk-flex-inline uk-flex-middle uk-margin-small-bottom" href="#"><span class="uk-border-circle uk-margin-small-right uk-flex-inline uk-flex-center uk-flex-middle">{{> renderIcon name="linkedin"}}</span>Linkedin</a>
+									</div>
+								</div>
+								<div class="uk-text-right@m">
+									{{> ukButton link="#" label="Get a quote" icon="arrow-right" size="large"}}
+								</div>
+							</div>						
+							{{/inline}}
+						{{/ukGrid}}							
+					</div>
+
+					<div class="footer-bottom uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
+						<div class="copyright uk-margin-right">&copy; 2015-{{year}} {{nb.clientName}}. All rights reserved.</div>
+						<div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
+							<div class="legal uk-flex uk-flex-middle uk-flex-wrap">
+								<ul class="uk-flex uk-flex-middle uk-flex-wrap">
+								{{#each legal}}
+									<li>
+										<a href="#">{{this}}</a>
+									</li>
+								{{/each}}
+								</ul>
+								<div class="watermark">
+									Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
+								</div>								
+							</div>
+						</div>
+					</div>
 				</div>
-
-				<div class="copyright uk-margin-small-bottom">Copyright &copy; {{year}} {{nb.clientName}}. All rights reserved.</div>
-
-				<div class="watermark">
-					Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
-				</div>
-
 			</div>
 		</footer>
 	</div>
 
 	<div class="mmenu-overlay uk-hidden">
 		<div id="mmenu">
-			{{!-- <form class="uk-search uk-search-default uk-margin-left uk-hidden@m">
-				<span class="uk-search-icon-flip" data-uk-search-icon></span>
-				<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
-			</form>			 --}}
 			{{> renderNavigation items=menu mobile=true active=page.name}}
 		</div>
 		<div class="mmenu-bg" role="presentation"></div>
@@ -124,8 +179,23 @@
 		<clipPath id="videoShapeBottom" clipPathUnits="objectBoundingBox"><path d="M1,1 H0 V0.225 C0,0.225,0.238,0.277,0.503,0.246 C0.767,0.216,1,0.109,1,0.109 V1"></path></clipPath>
 	</svg>
 	<svg class="svg">
-	<clipPath id="bannerShapeTop" clipPathUnits="objectBoundingBox"><path d="M1,0.332 C0.621,0.995,0.393,1,0,0.905 L0,0.827 C0,0.827,0.22,0.956,0.484,0.82 C0.749,0.685,1,0.005,1,0.005 L1,0.332"></path></clipPath>
+	<clipPath id="bannerShapeBottom" clipPathUnits="objectBoundingBox"><path d="M1,0.332 C0.621,0.995,0.393,1,0,0.905 L0,0.827 C0,0.827,0.22,0.956,0.484,0.82 C0.749,0.685,1,0.005,1,0.005 L1,0.332"></path></clipPath>
 	</svg>	
+	<svg class="svg">
+		<clipPath id="heroShape" clipPathUnits="objectBoundingBox"><path d="M0,0.001 H1 V0.818 C1,0.818,0.762,0.951,0.5,0.987 C0.238,1,0,0.977,0,0.977 V0.001"></path></clipPath>
+	</svg>
+	<svg class="svg">
+		<clipPath id="goldHeroShape" clipPathUnits="objectBoundingBox"><path d="M1,0.327 C0.621,0.99,0.393,1,0,0.901 L0,0.822 C0,0.822,0.22,0.952,0.485,0.816 C0.749,0.68,1,0,1,0 L1,0.327"></path></clipPath>
+	</svg>
+	<svg class="svg">
+		<clipPath id="blueHeroShape" clipPathUnits="objectBoundingBox"><path d="M1,0.087 C0.624,1,0.39,1,0.001,0.809 L0.001,0.774 C0.396,1,0.624,0.945,1,0.005 L1,0.087"></path></clipPath>
+	</svg>
+	<svg class="svg">
+		<clipPath id="footerShape" clipPathUnits="objectBoundingBox"><path d="M1,1 H0 V0.118 C0,0.118,0.238,0.169,0.502,0.139 C0.767,0.108,1,0.001,1,0.001 V1"></path></clipPath>
+	</svg>
+	{{!-- <svg class="svg">
+	<clipPath id="footerShapeTop" clipPathUnits="objectBoundingBox"><path d="M1,0.33 C0.621,0.993,0.393,1,0,0.903 L0,0.825 C0,0.825,0.22,0.954,0.485,0.819 C0.749,0.683,1,0.003,1,0.003 L1,0.33"></path></clipPath>
+	</svg>	 --}}
 
 	<script src="./js/uikit.min.js"></script>
 	<script src="./js/nbkit.min.js"></script>
