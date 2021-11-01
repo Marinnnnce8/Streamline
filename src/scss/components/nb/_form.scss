@@ -1,6 +1,6 @@
 .nb-form {
 
-	+ .nb-form {
+	+.nb-form {
 		margin-top: $global-gutter;
 	}
 
@@ -27,13 +27,13 @@
 		}
 
 		[aria-invalid='true'] {
-			border-color: $danger;
+			border: 2px solid $red;
 		}
 	}
 
 	.uk-checkbox {
 
-		+ span {
+		+span {
 			display: inline-block;
 			margin-left: $global-small-margin;
 		}
@@ -41,7 +41,7 @@
 
 	.uk-radio {
 
-		+ span {
+		+span {
 			display: inline-block;
 			margin-left: $global-small-margin;
 		}
@@ -55,12 +55,37 @@
 	}
 
 	&-error {
-		font-size: $global-small-font-size;
-		font-weight: $base-strong-font-weight;
+		color: $red !important;
+		font-size: 16px;
+		font-weight: $light;
+		margin-top: -7px;
+		line-height: 1.4;
 		margin-bottom: 5px; // math.div($global-small-margin, 2);
+	}
+
+	&-errors {
+		font-weight: $light;
+		border-radius: 0;
+	}
+
+	.uk-text-small {
+		font-size: 14px;
+		margin-bottom: 5px;
+		margin-top: -7px;
 	}
 
 	.g-recaptcha {
 		margin-bottom: $global-gutter;
+	}
+
+	@media (min-width: $breakpoint-large) {
+
+		*+.uk-grid-margin-small,
+		.uk-grid+.uk-grid-row-small,
+		.uk-grid+.uk-grid-small,
+		.uk-grid-row-small>.uk-grid-margin,
+		.uk-grid-small>.uk-grid-margin {
+			margin-top: 25px;
+		}
 	}
 }

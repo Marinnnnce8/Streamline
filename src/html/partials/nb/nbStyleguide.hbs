@@ -172,29 +172,29 @@
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Primary</div>
-			{{> ukButton label=cta style="primary"}}
+			{{> ukButton label="Button Normal" icon="arrow-right" style="primary"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Primary Small</div>
-			{{> ukButton label=cta style="primary" size="small"}}
+			{{> ukButton label="Button Small" icon="arrow-right" style="primary" size="small"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Primary Large</div>
-			{{> ukButton label=cta style="primary" size="large"}}
-		</div>
-
-		<div>
-			<div class="uk-text-meta uk-form-label">Secondary</div>
-			{{> ukButton label=cta style="secondary"}}
-			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Small</div>
-			{{> ukButton label=cta style="secondary" size="small"}}
-			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Large</div>
-			{{> ukButton label=cta style="secondary" size="large"}}
+			{{> ukButton label="Button Large" icon="arrow-right" style="primary" size="large"}}
 		</div>
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Default</div>
-			{{> ukButton label=cta}}
+			{{> ukButton label="Button Normal" icon="arrow-right"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Default Small</div>
-			{{> ukButton label=cta size="small"}}
+			{{> ukButton label="Button Small" icon="arrow-right" size="small"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Default Large</div>
-			{{> ukButton label=cta size="large"}}
+			{{> ukButton label="Button Large" icon="arrow-right" size="large"}}
+		</div>
+
+		<div>
+			<div class="uk-text-meta uk-form-label">Secondary</div>
+			{{> ukButton label="Button Normal" icon="arrow-right" style="secondary"}}
+			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Small</div>
+			{{> ukButton label="Button Small" icon="arrow-right" style="secondary" size="small"}}
+			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Large</div>
+			{{> ukButton label="Button Large" icon="arrow-right" style="secondary" size="large"}}
 		</div>
 
 		{{/inline}}
@@ -206,18 +206,18 @@
 		{{#*inline "cells"}}
 
 		<div>
-			<div class="uk-text-meta uk-form-label">Danger</div>
-			{{> ukButton label=cta style="danger"}}
+			<div class="uk-text-meta uk-form-label">Text Normal</div>
+			{{> ukButton label="Button link normal" icon="arrow-right" style="text"}}
 		</div>
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Text Normal</div>
-			{{> ukButton label=cta style="text"}}
+			{{> ukButton label="Button link normal" icon="arrow-right" style="text"}}
 		</div>
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Text Large</div>
-			{{> ukButton label=cta style="text" class="uk-text-large"}}
+			{{> ukButton label="Button link large" icon="arrow-right" style="text" class="uk-text-large"}}
 		</div>
 
 		{{/inline}}
@@ -229,22 +229,22 @@
 {{#> nbForm}}
 	{{#*inline "form"}}
 
-	<form id="nb-form-{{page.name}}" class="uk-form-stacked uk-width-2-3@s uk-width-3-5@m InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1">
+	<form id="nb-form-{{page.name}}" class="uk-form-stacked InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1">
 
 		<h3>Form Styles</h3>
 
 		{{#> ukGrid class="uk-grid-small"}}
 			{{#*inline "cells"}}
 
-			{{> nbInput label="Your Name" name="name" title="Please enter your name"}}
+			{{> nbInput class="uk-width-3-4@m" label="Your Name" name="name" title="Please enter your name"}}
 
-			{{> nbInput label="Email Address" name="email" type="email" title="Please enter a valid email address"}}
+			{{> nbInput class="uk-width-3-4@m" label="Email Address" name="email" type="email" title="Please enter a valid email address"}}
 
-			{{> nbInput label="Telephone" name="tel" type="tel"}}
+			{{> nbInput class="uk-width-2-3@m" label="Telephone" name="tel" type="tel" optional=true}}
 
 			{{> nbInput label="Your Enquiry" name="enquiry" type="textarea" title="Please enter your enquiry"}}
 
-			{{> nbInput name="submit" type="submit" value="Send"}}
+			{{> nbInput name="submit" type="submit" value="Send Message" icon="arrow-right"}}
 
 			{{/inline}}
 		{{/ukGrid}}
@@ -253,6 +253,8 @@
 
 	{{/inline}}
 {{/nbForm}}
+
+{{>share class="uk-margin-large-top"}}
 
 {{/inline}}
 

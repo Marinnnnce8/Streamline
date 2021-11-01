@@ -1,0 +1,34 @@
+.nav-top {
+	>.uk-flex-right {
+		padding-right: $global-medium-margin;
+
+		>.uk-flex:first-of-type {
+			padding-right: $global-margin;
+
+			a {
+				margin-left: $global-medium-margin;
+			}
+		}
+	}
+
+	a:not(.uk-button) {
+		color: $white;
+		font-weight: $normal;
+		line-height: 1.1;
+		margin-left: $global-gutter;
+		text-decoration: none;
+		transition: $transition;
+
+		.icon {
+			width: 16px;
+		}
+
+		@include hover {
+			color: $gold-lighter;
+		}
+	}
+
+	.uk-button {
+		border-radius: 0;
+	}
+}

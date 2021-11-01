@@ -9,3 +9,28 @@
 .icon {
 	height: 24px;
 }
+
+.circle-button,
+.share a {
+	background-color: transparent;
+	border: 1px solid rgba($grey-border-gold, .2);
+	transition: $transition;
+	width: 56px;
+	height: 56px;
+	padding: 0;
+
+	.icon {
+		color: $primary;
+		width: 18px;
+		height: 18px;
+	}
+
+	@include hover {
+		border-color: $primary;
+		background-color: $primary;
+
+		.icon {
+			color: $white;
+		}
+	}
+}

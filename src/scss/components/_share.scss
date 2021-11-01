@@ -1,0 +1,10 @@
+.share {
+	li::before {
+		display: none;
+	}
+
+	.uk-text-lead {
+		font-weight: $normal;
+		line-height: 1.2;
+	}
+}

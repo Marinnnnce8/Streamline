@@ -84,7 +84,12 @@ $base-h5-font-size: 20px;
 $base-blockquote-font-size: 30px;
 $base-blockquote-margin-vertical: $global-gutter;
 $text-small-font-size: 16px;
-$text-small-line-height: 1.4; 
+$text-small-line-height: 1.4;
+
+
+//
+// Form
+//
 
 
 //
@@ -94,11 +99,8 @@ $form-background: $white;
 $form-color: $global-color;
 $form-focus-background: $white;
 $form-focus-color: $global-color;
-$form-border: $global-color;
-$form-focus-border: $primary;
-$form-radio-border: $global-color;
-$form-label-color: $global-color;
-$form-label-font-size: $global-small-font-size;
+$form-height: 56px;
+$form-stacked-margin-bottom: $global-small-margin;
 
 
 //
@@ -188,6 +190,29 @@ $navbar-dropdown-background: $white;
 $table-header-cell-font-size: 14px;
 $table-header-cell-font-weight: $bold;
 $table-header-cell-color: $white;
+
+
+//
+// Button
+//
+$button-line-height: 1.1;
+$button-small-line-height: 1.1;
+$button-large-line-height: 1.1;
+$button-font-size: 18px;
+$button-large-font-size: 18px;
+$button-padding-horizontal: $global-gutter;
+$button-small-padding-horizontal: $global-gutter;
+$button-large-padding-horizontal: $global-gutter;
+$button-primary-hover-background: transparent;
+$button-primary-active-background: transparent;
+$button-default-background: transparent;
+$button-secondary-background: $gold-lighter;
+$button-secondary-color: $primary;
+$button-default-color: $primary;
+$button-default-hover-color: $white;
+$button-default-active-color: $white;
+$button-text-line-height: 1.4;
+$button-text-hover-color: $secondary;
 
 
 //

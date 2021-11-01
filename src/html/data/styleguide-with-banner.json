@@ -17,5 +17,30 @@
 			"title": "Level 2"
 		}
 	],
-	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content."
+	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content.",
+	"share": {
+		"title": "Share page on:",
+		"items": [
+			{
+				"src": "#",
+				"label": "Visit our Facebook page",
+				"name": "facebook"
+			},
+			{
+				"src": "#",
+				"label": "Visit our Twitter page",
+				"name": "twitter"
+			},
+			{
+				"src": "#",
+				"label": "Visit our Pinterest page",
+				"name": "pinterest"
+			},
+			{
+				"src": "#",
+				"label": "Contact us via email",
+				"name": "envelope"
+			}
+		]
+	}
 }

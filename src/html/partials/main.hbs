@@ -22,6 +22,19 @@
 	<div>
 
 		<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
+			<nav class="uk-background-primary nav-top uk-flex uk-flex-right uk-flex-middle">
+				<div class="uk-flex uk-flex-right uk-flex-middle">
+					<div class="uk-flex uk-flex-middle">
+						<a class="uk-text-small" href="#">News</a>
+						<a class="uk-text-small" href="#">Contact</a>
+					</div>
+					<div class="uk-flex uk-flex-middle">
+						<a href="#" aria-label="Visit our Facebook page">{{> renderIcon name="facebook"}}</a>
+						<a href="#" aria-label="Visit our Linkedin page">{{> renderIcon name="linkedin"}}</a>
+					</div>
+				</div>
+				{{> ukButton style="secondary" label="Get a quote" icon="arrow-right"}}
+			</nav>
 			<nav class="uk-navbar-container uk-navbar" data-uk-navbar>
 
 				<div class="uk-navbar-left">

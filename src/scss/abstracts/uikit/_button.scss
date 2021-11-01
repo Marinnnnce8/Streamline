@@ -1,0 +1,177 @@
+.uk-button {
+	text-transform: none;
+	border-radius: $border-radius-small;
+	min-height: 0;
+	position: relative;
+	letter-spacing: -.02em;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: $transition;
+
+	&:not(.uk-button-text) {
+		font-weight: $normal;
+	}
+
+	&:not(.uk-button-default):not(.uk-button-text) .icon {
+		color: inherit;
+	}
+
+	&:not(.uk-button-large):not(.uk-text-large) .icon {
+		height: 25px;
+	}
+
+	&.uk-button-large .icon,
+	&.uk-text-large .icon {
+		height: $global-gutter;
+	}
+
+	&:not(.uk-button-small):not(.uk-button-large):not(.uk-button-text) {
+		padding-top: 15px;
+        padding-bottom: 15px;
+	}
+
+	&:not(.uk-button-large):not(.uk-button-text) {
+		.icon:not(.icon-left) {
+			margin-left: $global-gutter;
+		}
+
+		.icon-left {
+			margin-right: $global-gutter;
+		}
+	}
+
+	&.uk-button-large {
+		.icon:not(.icon-left) {
+			margin-left: $global-medium-margin;
+		}
+
+		.icon-left {
+			margin-right: $global-medium-margin;
+		}
+	}
+
+	&.uk-button-text {
+		.icon:not(.icon-left) {
+			margin-left: $global-small-margin;
+		}
+
+		.icon-left {
+			margin-right: $global-small-margin;
+		}
+	}
+}
+
+@mixin hook-button-small {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+@mixin hook-button-large {
+	padding-top: 17px;
+    padding-bottom: 18px;
+}
+
+@mixin hook-button-default {
+	border: 1px solid rgba($primary, .3);
+	@include button-hover($primary);
+	transition-delay: .2s;
+
+	svg {
+		color: $secondary;
+	}
+}
+
+@mixin hook-button-default-active {
+	border-color: $primary;
+
+	svg {
+		color: $white;
+	}
+}
+
+@mixin hook-button-default-hover {
+	border-color: $primary;
+
+	svg {
+		color: $white;
+	}
+}
+
+@mixin hook-button-primary {
+	@include button-hover($blue-dark);
+	transition-delay: .1s;
+}
+
+@mixin hook-button-secondary {
+	@include button-hover($secondary);
+}
+
+@mixin hook-button-text {
+	&:not(.uk-text-large) {
+		font-size: 16px;
+	}
+
+	&.uk-text-large {
+		font-size: 18px;
+		line-height: $global-line-height;
+		font-weight: $normal;
+
+		&::after {
+			width: calc(100% - 39px);
+		}
+	}
+
+	.icon {
+		color: $secondary;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: $primary;
+		z-index: -1;
+		height: 2px;
+		bottom: -6px;
+		left: 0;
+	}
+
+	&::before {
+		width: 0%;
+		transition: ease .4s;
+	}
+
+	&::after {
+		width: calc(100% - 35px);
+		transition: ease .6s;
+	}
+
+	@include hover {
+
+		&::before,
+		&::after {
+			background-color: $secondary;
+		}
+
+		&::before {
+			width: calc(100% - 35px);
+		}
+
+		&::after {
+			left: calc(100% - 35px);
+			width: 0%;
+			transition: ease .2s;
+		}
+
+		&.uk-text-large {
+			&::after {
+				left: calc(100% - 39px);
+			}
+
+			&::before {
+				width: calc(100% - 39px);
+			}
+		}
+	}
+}

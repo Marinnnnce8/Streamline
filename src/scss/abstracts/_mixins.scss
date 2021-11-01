@@ -132,6 +132,35 @@
 	}
 }
 
+// Button hover effect
+@mixin button-hover($color) {
+	overflow: hidden;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 360px;
+		height: 360px;
+		pointer-events: none;
+		left: 50%;
+		transform: scale(0) translate(-50%, -50%);
+		top: 50%;
+		transform-origin: center;
+		border-radius: 50%;
+		background-color: $color;
+		transition: .4s ease-in-out;
+		z-index: -1;
+	}
+
+	@include hover {
+		&::before {
+			transform: scale(1) translate(-50%, -50%);
+		}
+	}
+}
+
 
 //
 // UIkit

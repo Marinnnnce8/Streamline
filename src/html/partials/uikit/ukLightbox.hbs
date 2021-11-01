@@ -1,7 +1,7 @@
 {{#each items}}
     {{#with this}} 
     <div class="lightbox-box uk-position-relative uk-flex uk-flex-column uk-flex-right lightbox-inner uk-cover-container uk-overflow-hidden" data-uk-lightbox="video-autoplay: true">
-        {{!-- <a class="uk-position-cover uk-position-z-index" href="{{src}}" data-caption="{{caption}}" aria-label="Click to watch video"></a> --}}
+        <a class="uk-position-cover uk-position-z-index" href="{{src}}" data-caption="{{caption}}" aria-label="Click to watch video"></a>
 		<img src="{{img}}" data-uk-cover alt="image" loading="lazy" width="{{width}}" height="{{height}}">
         <div class="uk-flex uk-flex-column uk-flex-middle uk-text-center lightbox-strap uk-background-primary uk-position-relative">
 			<div class="shape-top" role="presentation"></div>

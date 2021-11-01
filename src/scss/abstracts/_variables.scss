@@ -8,7 +8,13 @@
 //
 
 // Family
-$font-default: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$font-default: Calibri,
+Candara,
+Segoe,
+Segoe UI,
+Optima,
+Arial,
+sans-serif;
 
 // Size
 $font-size: 22px;
@@ -35,9 +41,14 @@ $secondary: #847558;
 $success: #32d296;
 $warning: #ffc979;
 $danger: #fcb2bf;
+$red: #d13e4e;
 $cold-grey: #eef2f5;
 $ink: #1f1447;
+$gold-lighter: #d9c58d;
+$blue-dark: #001a4e;
+$blue-light: #007deb;
 $grey-border: #d3dbe1;
+$grey-border-gold: #afa178;
 $grey: lighten($black, 32%);
 $light-grey: lighten($grey, 32%);
 $off-white: lighten($light-grey, 20%);

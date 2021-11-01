@@ -5,6 +5,9 @@
 {{/if}}
 
 	<div class="nb-form-content">
+		{{#if optional}}
+			<div class="uk-text-small">Optional</div>
+		{{/if}}		
 		<div role="alert"></div>
 		{{#if (eq type "textarea")}}
 
@@ -13,11 +16,24 @@
 		{{else}}
 		{{#if (eq type "submit")}}
 
-		<button id="nb-form-{{page.name}}_{{name}}" class="uk-button uk-button-{{default style "primary"}}" name="{{name}}" value="{{value}}" type="{{type}}">{{value}}</button>
+		<button id="nb-form-{{page.name}}_{{name}}" class="uk-button uk-button-{{default style "primary"}}" name="{{name}}" value="{{value}}" type="{{type}}">
+		{{value}}
+		{{#if (eq pull "left")}}
+			{{#if icon}}
+				{{> renderIcon name=icon class="icon-left"}}
+			{{/if}}
+			{{label}}
+		{{else}}
+			{{label}}
+			{{#if icon}}
+				{{> renderIcon name=icon}}
+			{{/if}}
+		{{/if}}		
+		</button>
 
 		{{else}}
 
-		<input id="nb-form-{{page.name}}_{{name}}" class="uk-input" name="{{name}}" type="{{default type "text"}}" {{#if title}}title="{{title}}" required{{else}}placeholder="Optional"{{/if}}>
+		<input id="nb-form-{{page.name}}_{{name}}" class="uk-input" name="{{name}}" type="{{default type "text"}}" {{#if title}}title="{{title}}" required{{/if}}>
 
 		{{/if}}
 		{{/if}}

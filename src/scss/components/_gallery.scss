@@ -26,6 +26,14 @@
 			height: auto;
 			width: 100%;
 			vertical-align: middle;
+			transition: $speed;
+			transform-origin: 50% 50%;
+		}
+
+		@include hover {
+			img {
+				transform: scale3d(.95, .95, 1);
+			}
 		}
 	}
 
