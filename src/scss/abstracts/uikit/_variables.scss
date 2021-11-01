@@ -141,9 +141,10 @@ $grid-large-gutter-horizontal-l: $global-large-gutter;
 //
 // Breadcrumb
 //
-$breadcrumb-item-color: $global-muted-color;
-$breadcrumb-divider: '/';
-$breadcrumb-divider-margin-horizontal: $global-margin;
+$breadcrumb-item-font-size: 16px;
+$breadcrumb-item-color: $secondary;
+$breadcrumb-divider: '-';
+$breadcrumb-divider-margin-horizontal: $global-small-margin;
 $breadcrumb-divider-color: $global-color;
 
 

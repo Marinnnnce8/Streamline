@@ -1,43 +1,75 @@
 .banner {
-	height: calc(75vh - 80px);
-	overflow: hidden;
-
-	&::before {
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
-		bottom: 0;
-		content: '';
-		height: 100%;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		z-index: 1;
+	min-height: 320px;
+	// clip-path: url('#bannerShapeTop');
+	// z-index: -1;
+	
+	&:not(.banner-home) {
+		h1 {
+			font-weight: $light;
+		}
 	}
 
-	.uk-overlay {
-		padding: $global-margin 0;
-		z-index: 2;
-
-		h1 {
-			margin: 0;
-		}
+	.shape-bottom {
+		left: 0;
+		bottom: 100%;
+		width: 100%;
+		background-color: $primary;
+		clip-path: url('#bannerShapeTop');
+		transform: translateY(63%);
 	}
 
 	@media (min-width: $breakpoint-small) {
-
-		&::before {
-			height: 75%;
+		&:not(.banner-home) {
+			min-height: 445px;
 		}
 
-		.uk-overlay {
-			padding-bottom: $global-medium-margin;
+		&-home {
+			min-height: 465px;
+		}
+
+		&:not(.banner-plain) {
+			.uk-flex {
+				margin-top: $global-large-margin;
+			}
 		}
 	}
 
 	@media (min-width: $breakpoint-large) {
+		&-home {
+			min-height: 765px;
+		}
 
+		&-img {
+			position: absolute;
+			left: 0;
+			width: 50vw;
+			top: 0;
+			bottom: 0;
+		}
 
-		.uk-overlay {
-			padding-bottom: $global-large-margin;
+		&-half {
+			h1 {
+				max-width: 520px;
+			}
+		}
+
+		&:not(.banner-plain) {
+			.uk-flex {
+				justify-content: flex-end;
+				margin-top: 120px;
+			}
+
+			h1 {
+				width: 50%;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-xlarge) {
+		&-half {
+			.uk-flex {
+				padding-right: 115px;
+			}
 		}
 	}
 }

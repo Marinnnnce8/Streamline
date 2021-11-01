@@ -1,6 +1,7 @@
 {
-	"h1": "Welcome to this website",
+	"h1": "40 YEARS OF UNRIVALLED FREIGHT AND LOGISTICS EXPERTISE",
 	"banner": {
-		"size": "large"
+		"size": "large",
+		"src": "./img/home-banner.png"
 	}
 }

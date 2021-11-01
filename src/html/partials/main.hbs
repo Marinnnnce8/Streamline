@@ -69,13 +69,14 @@
 
 			{{#if page.banner}}
 				{{> banner}}
-			{{else}}
-				{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
-					{{#*inline "out"}}
-						<h1>{{page.h1}}</h1>
-						{{> ukBreadcrumb}}
-					{{/inline}}
-				{{/ukContainer}}
+				{{#if (neq page.name "home")}}
+					{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
+						{{#*inline "out"}}
+							{{> ukBreadcrumb}}
+							<h1>{{page.h1}}</h1>
+						{{/inline}}
+					{{/ukContainer}}				
+				{{/if}}
 			{{/if}}
 
 			{{#> main}}{{/main}}
@@ -122,6 +123,9 @@
 	<svg class="svg">
 		<clipPath id="videoShapeBottom" clipPathUnits="objectBoundingBox"><path d="M1,1 H0 V0.225 C0,0.225,0.238,0.277,0.503,0.246 C0.767,0.216,1,0.109,1,0.109 V1"></path></clipPath>
 	</svg>
+	<svg class="svg">
+	<clipPath id="bannerShapeTop" clipPathUnits="objectBoundingBox"><path d="M1,0.332 C0.621,0.995,0.393,1,0,0.905 L0,0.827 C0,0.827,0.22,0.956,0.484,0.82 C0.749,0.685,1,0.005,1,0.005 L1,0.332"></path></clipPath>
+	</svg>	
 
 	<script src="./js/uikit.min.js"></script>
 	<script src="./js/nbkit.min.js"></script>

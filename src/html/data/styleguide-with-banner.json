@@ -2,9 +2,11 @@
 	"template": {
 		"name": "nb-styleguide"
 	},
-	"h1": "This is the Styleguide h1",
+	"h1": "Internal styleguide page",
 	"banner": {
-		"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg"
+		"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg",
+		"halfImg": true,
+		"size": "large"
 	},
 	"breadcrumbs": [
 		{
