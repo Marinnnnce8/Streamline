@@ -1,0 +1,31 @@
+<div class="items items-{{type}}{{#if (eq type "services")}} uk-box-shadow-large{{/if}}">
+	{{#if itemLabel}}
+		<p class="uk-text-uppercase uk-text-secondary label">{{itemLabel}}</p>
+	{{/if}}
+
+	{{#> ukGrid class=gridClass}}
+		{{#*inline "cells"}}
+
+		{{#if (eq type "images")}}
+			{{> images items=items}}
+		{{/if}}
+
+		{{#if (eq type "numbers")}}
+			{{> numbers items=items}}
+		{{/if}}
+
+		{{#if (eq type "services")}}
+			{{> services items=items}}
+		{{/if}}
+
+		{{#if (eq type "image-links")}}
+			{{> imageLinks items=items}}
+		{{/if}}
+		
+		{{#if (eq type "links")}}
+			{{> links items=items}}
+		{{/if}}
+
+		{{/inline}}
+	{{/ukGrid}}
+</div>

@@ -1,14 +1,11 @@
 .uk-switcher {
 	li {
 		background-color: $white;
-		box-shadow: 0 20px 60px rgba($primary, .25);
 		border-bottom: 3px solid $secondary;
 		padding: $global-medium-margin $global-margin $global-gutter;
 	}
 
 	.uk-button-secondary {
-		box-shadow: 0 16px 40px rgba($primary, .35);
-		width: 100%;
 		justify-content: space-between;
 		padding-left: 35px;
 		padding-right: 35px;

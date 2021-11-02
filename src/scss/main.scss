@@ -21,11 +21,13 @@
 @import 'components/services';
 @import 'components/sectors';
 @import 'components/news';
+@import 'components/items';
 // +++ Generated components will be added above this line
 
 @import 'components/nb/form';
 
 @import 'pages/home';
+@import 'pages/listings';
 
 @import 'utils/browser';
 @import 'utils/print';

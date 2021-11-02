@@ -1,0 +1,56 @@
+{
+	"h1": "Listing news and projects page template",
+	"banner": {
+		"size": "small",
+		"src": "./img/home-banner.png"
+	},
+	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content. Sed ut per spiciatis unde omnis iste natus error sit voluptatem accusantium.",
+	"items": {
+		"posts": [
+			{
+				"title": "Vacancies at streamline as company plans growth",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-1.jpg",
+				"getSummary": "In a pool of over 200 staff, almost 40% of our employees have worked at Streamline for more than 10 years."
+			},
+			{
+				"title": "Festive sailing schedule to Orkney and Shetland",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-2.jpg",
+				"getSummary": "Last days for pre-Christmas delivery, our departure schedule, and opening hours over the festive period for the Aberdeen Terminal."
+			},
+			{
+				"title": "Festive opening hours",
+				"url": "#",
+				"dates": "June 16th 2021",
+				"location": "Somewhere over the rainbow",
+				"getImage": "./img/news-3.jpg",
+				"getSummary": "Our offices and depots will be open as normal over the holiday season, with the exception of:"
+			},
+			{
+				"title": "Vacancies at streamline as company plans growth",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-1.jpg",
+				"getSummary": "In a pool of over 200 staff, almost 40% of our employees have worked at Streamline for more than 10 years."
+			},
+			{
+				"title": "Festive sailing schedule to Orkney and Shetland",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-2.jpg",
+				"getSummary": "Last days for pre-Christmas delivery, our departure schedule, and opening hours over the festive period for the Aberdeen Terminal."
+			},
+			{
+				"title": "Festive opening hours",
+				"url": "#",
+				"dates": "June 16th 2021",
+				"location": "Somewhere over the rainbow",
+				"getImage": "./img/news-3.jpg",
+				"getSummary": "Our offices and depots will be open as normal over the holiday season, with the exception of:"
+			}
+		]
+	}
+}

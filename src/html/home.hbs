@@ -3,25 +3,79 @@
 
 	{{> switch}}
 
-	{{> about heading="Scotland’s leading freight and logistics operators" label="our story" src="https://youtu.be/jmOuxZAJifA" lightboxLabel="Company video"}}
+	<section class="uk-section about">
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">our story</p>
+			{{#> ukGrid class="uk-child-width-1-2@m"}}
+				{{#*inline "cells"}}
+					<div>
+						<h2>Scotland’s leading freight and logistics operators</h2>
+					</div>
+					<div class="uk-flex uk-flex-right uk-flex-bottom">
+						<p class="uk-text-lead">For over 40 years, Streamline Shipping Group has provided unrivalled shipping, freight and transport solutions across Scotland, the wider UK and around the world.</p>
+					</div>
+					<div class="uk-flex uk-flex-bottom">
+						<div class="uk-flex">
+							<div class="uk-margin-small-right" data-uk-lightbox>
+								<a class="uk-button uk-button-primary uk-button-large uk-box-shadow-medium" href="https://youtu.be/jmOuxZAJifA" data-caption="Company Video">
+									{{> renderIcon name="play" class="icon-left"}}
+									Company Video
+								</a>
+							</div>
+							{{> ukButton link="#" label="Find out more about us" icon="arrow-right"}}
+						</div>						
+					</div>
+					<div>
+						<p>We work with clients of all sizes and in all locations – from specialised sea freight transport to the north of Scotland, Orkney and Shetland to international freight forwarding across the globe.</p>
+					</div>					
+				{{/inline}}
+			{{/ukGrid}}		
+			{{/inline}}
+		{{/ukContainer}}
+		{{> items type="images" items=page.about.images gridClass="uk-grid-small uk-child-width-1-5@s uk-child-width-1-2"}}
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+			{{> items type="numbers" items=page.sectors.numbers gridClass="uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-2@s"}}	
+			{{/inline}}
+		{{/ukContainer}}			
+	</section>
 
-	{{> services heading="Streamline offers a range of haulage, shipping and freight logistics services" label="our services"}}
-
-	{{> sectors heading="We’re experts in complex and difficult jobs" label="our sectors"}}
-
-	{{> news heading="Read our latest news headlines" label="Lates news"}}
-
-	{{!-- {{#> ukSection heading="Internal Pages" size="large"}}
+	{{#> ukSection label="our services" heading="Streamline offers a range of haulage, shipping and freight logistics services" sectionClass="services" buttonLabel="View all our services"}}
 		{{#*inline "out"}}
-		{{> nbItems items=items.children}}
+			{{> items type="services" items=page.services gridClass="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
 		{{/inline}}
 	{{/ukSection}}
 
-	{{#> ukSection heading="Latest News" size="large"}}
+	<section class="uk-section sectors">
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">our sectors</p>
+			{{#> ukGrid class="uk-child-width-1-2@m"}}
+				{{#*inline "cells"}}
+					<div>
+						<h2>We’re experts in complex and difficult jobs</h2>
+					</div>
+					<div class="uk-flex uk-flex-bottom uk-flex-right">
+						{{> ukButton link="#" label="View all our sectors" size="large" icon="arrow-right"}}					
+					</div>
+				{{/inline}}
+			{{/ukGrid}}		
+			{{/inline}}
+		{{/ukContainer}}
+		{{> items type="image-links" items=page.sectors.imageLinks gridClass="uk-grid-small uk-child-width-1-5@m uk-child-width-1-2@s"}}
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+			{{> items type="links" items=page.sectors.links gridClass="uk-grid-medium uk-child-width-1-2@m" itemLabel="Other sectors"}}	
+			{{/inline}}
+		{{/ukContainer}}		
+	</section>
+	
+	{{#> ukSection label="Latest news" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
 		{{#*inline "out"}}
-		{{> nbItems items=items.posts}}
+			{{> nbItems items=items.posts}}
 		{{/inline}}
-	{{/ukSection}} --}}
+	{{/ukSection}}
 
 	{{/inline}}
 {{/main}}

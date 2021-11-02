@@ -1,0 +1,9 @@
+{{#each items}}
+	{{#with this}}
+		<div>
+			{{> renderIcon name=name}}
+			<div class="number uk-text-secondary">{{number}}</div>
+			<div class="uk-text-small">{{text}}</div>
+		</div>
+	{{/with}}
+{{/each}}

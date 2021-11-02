@@ -1,0 +1,20 @@
+@mixin hook-section {
+
+	.uk-button-default.uk-button-large {
+		margin-bottom: $global-large-margin;
+	}
+
+	.uk-grid h2 {
+		margin-bottom: $global-gutter;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.uk-button-default.uk-button-large {
+			margin-bottom: $global-large-margin;
+		}
+
+		.uk-grid h2 {
+			margin-bottom: 50px;
+		}
+	}
+}

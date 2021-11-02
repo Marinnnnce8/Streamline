@@ -1,0 +1,17 @@
+{{#> main}}
+{{#*inline "main"}}
+
+
+{{> renderIntro}}
+
+
+<section class="uk-section news">
+	{{#> ukContainer}}
+		{{#*inline "out"}}
+			{{> nbItems items=page.items.posts loadMore=true}}
+		{{/inline}}
+	{{/ukContainer}}
+</section>
+
+{{/inline}}
+{{/main}}

@@ -70,7 +70,9 @@
 					{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
 						{{#*inline "out"}}
 							{{> ukBreadcrumb}}
+							{{#unless (eq page.name "listings")}}
 							<h1>{{page.h1}}</h1>
+							{{/unless}}
 						{{/inline}}
 					{{/ukContainer}}				
 				{{/if}}

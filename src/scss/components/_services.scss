@@ -1,36 +1,9 @@
 .services {
-	padding: $global-medium-margin 0 0;
+	padding: 0;
 
 	.uk-button-default {
 		margin-top: 50px;
 		margin-bottom: 65px;
-	}
-
-	&-items {
-		box-shadow: 0 20px 60px rgba($primary, .25);
-	}
-
-	&-item {
-		background-color: $white;
-		padding: $global-gutter $global-margin 50px;
-		transition: $transition;
-		@include expandable-arrow;
-
-
-		.uk-text-small {
-			transition: $transition;
-			transform: translateY(100%);
-			opacity: 0;
-		}
-
-		.icon {
-			height: $global-large-margin;
-			transition: $transition;
-		}
-
-		@include hover {
-			background-color: $cold-grey;
-		}
 	}
 
 	.uk-h4 {
@@ -39,68 +12,12 @@
 	}
 
 	@media (min-width: $breakpoint-small) {
-
-		&-item {
-			background-color: $white;
-			padding: 35px $global-margin 80px 45px;
-			height: 280px;
-
-			@include hover {
-				.icon {
-					transform: scale(.35);
-					transform-origin: top left;
-				}
-
-				.uk-h4 {
-					transform: translateY(-65px);
-				}
-
-				.uk-text-small {
-					transform: translateY(calc(-100% + $global-margin));
-					opacity: 1;
-				}
-			}
-		}
-
 		.uk-h4 {
 			margin-top: $global-gutter;
 		}
 	}
 
-	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium-max) {
-		&-item {
-			&:nth-of-type(odd) {
-				border-right: 1px solid rgba($primary, .15);
-			}
-
-			&:not(:nth-last-of-type(-n+2)) {
-				border-bottom: 1px solid rgba($primary, .15);
-			}
-		}
-	}
-
-	@media (min-width: $breakpoint-large) {
-		&-item {
-
-			&:nth-of-type(-n+3),
-			&:nth-of-type(5),
-			&:nth-of-type(6),
-			&:nth-of-type(7) {
-				border-right: 1px solid rgba($primary, .15);
-			}
-
-			&:nth-of-type(-n+4) {
-				border-bottom: 1px solid rgba($primary, .15);
-			}
-		}
-	}
-
-	@media (max-width: $breakpoint-xsmall-max) {
-
-		&-item {
-			&:not(:last-of-type) {
-				border-bottom: 1px solid rgba($primary, .15);
-			}
-		}
+	@media (min-width: $breakpoint-small) {
+		padding: $global-medium-margin 0 0;
 	}
 }

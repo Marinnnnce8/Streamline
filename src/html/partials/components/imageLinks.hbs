@@ -1,0 +1,12 @@
+{{#each items}}
+	{{#with this}}
+		<div>
+			<div class="uk-cover-container uk-flex uk-flex-column uk-flex-right items-image-link uk-box-shadow-hover-medium uk-overflow-hidden">
+				<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Find out more about {{title}}"></a>
+				<img src="{{src}}" alt="image" data-uk-cover>
+				<div class="uk-text-bold uk-text-uppercase uk-position-relative">{{title}}</div>
+				{{> renderIcon name="arrow-right-long"}}
+			</div>
+		</div>
+	{{/with}}
+{{/each}}

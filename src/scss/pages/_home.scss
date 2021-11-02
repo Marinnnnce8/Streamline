@@ -1,54 +1,15 @@
 .template-home {
 
-	.about,
-	.sectors {
-		&-images {
-			padding: 0 $global-margin;
+	.news {
+		padding-top: 100px;
 
-			.uk-grid {
-				margin-left: -8px;
+		@media (min-width: $breakpoint-medium) {
+			padding-top: 133px;
 
-				>* {
-					padding-left: 8px;
-				}
-			}
+			[data-uk-nb-items] {
 
-			*+.uk-grid-margin-small,
-			.uk-grid+.uk-grid-row-small,
-			.uk-grid+.uk-grid-small,
-			.uk-grid-row-small>.uk-grid-margin,
-			.uk-grid-small>.uk-grid-margin {
-				margin-top: 8px;
-			}
-		}
-
-		.uk-cover-container {
-			height: 100%;
-		}
-	}
-
-	@media (min-width: $breakpoint-small) {
-
-		.about,
-		.sectors {
-			&-images {
-				padding: 0 $global-small-margin;
-			}
-		}
-	}
-
-	@media (min-width: $breakpoint-medium) {
-
-		.about,
-		.sectors {
-			&-images {
-
-				.uk-grid {
-					margin-left: -$global-small-margin;
-
-					>* {
-						padding-left: $global-small-margin;
-					}
+				.uk-grid>div:not(:last-of-type) {
+					border-right: 1px solid $white;
 				}
 			}
 		}

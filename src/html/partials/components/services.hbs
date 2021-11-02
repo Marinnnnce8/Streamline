@@ -1,54 +1,15 @@
-<div class="services">
-
-	{{#> ukContainer}}
-		{{#*inline "out"}}
-
-		<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">{{label}}</p>
-		{{#> ukGrid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
-			{{#*inline "cells"}}
-
-				<div class="uk-width-3-4@l">
-					<h2>{{heading}}</h2>
-				</div>
-				<div class="uk-flex uk-flex-bottom uk-width-1-4@l">
-					{{> ukButton link="#" label="View all our services" size="large" icon="arrow-right"}}					
-				</div>
-
-			{{/inline}}
-		{{/ukGrid}}
-
-		{{/inline}}
-	{{/ukContainer}}
-
-
-	{{#> ukContainer}}
-		{{#*inline "out"}}
-		
-		<div class="services-items">
-			{{#> ukGrid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
-				{{#*inline "cells"}}
-
-				{{#each page.services.items}}
-					{{#with this}}
-						<div class="services-item uk-position-relative uk-overflow-hidden">
-							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Find out more about {{title}}"></a>
-							<span class="uk-flex uk-flex-middle" role="presentation"></span>
-							{{#if name}}
-								{{> renderIcon name=name}}	
-							{{/if}}
-							<div class="{{#if @last}}uk-h3 uk-margin-remove-top uk-margin-bottom{{else}}uk-h4 uk-margin-small-bottom{{/if}}">{{title}}</div>
-							{{#if text}}
-								<div class="uk-position-relative uk-text-small uk-margin-small-top uk-visible@s">{{text}}</div>
-							{{/if}}
-						</div>
-					{{/with}}
-				{{/each}}
-
-				{{/inline}}
-			{{/ukGrid}}
+{{#each items}}
+	{{#with this}}
+		<div class="items-service uk-position-relative uk-overflow-hidden">
+			<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Find out more about {{title}}"></a>
+			<span class="uk-flex uk-flex-middle" role="presentation"></span>
+			{{#if name}}
+				{{> renderIcon name=name}}	
+			{{/if}}
+			<div class="{{#if @last}}uk-h3 uk-margin-remove-top uk-margin-bottom{{else}}uk-h4 uk-margin-small-bottom{{/if}}">{{title}}</div>
+			{{#if text}}
+				<div class="uk-position-relative uk-text-small uk-margin-small-top uk-visible@s">{{text}}</div>
+			{{/if}}
 		</div>
-
-		{{/inline}}
-	{{/ukContainer}}
-	
-</div>
+	{{/with}}
+{{/each}}

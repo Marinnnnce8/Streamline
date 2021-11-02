@@ -1,0 +1,10 @@
+{{#each items}}
+	{{#with this}}
+		<div class="uk-position-relative uk-flex uk-flex-middle uk-margin-remove-top">
+			<a class="uk-h4 uk-flex uk-position-relative uk-flex-middle uk-flex-between uk-width-1-1" href="#">
+				{{title}}
+				{{> renderIcon name="arrow-right" class="uk-margin-left uk-text-secondary uk-visible@m"}}
+			</a>
+		</div>
+	{{/with}}
+{{/each}}

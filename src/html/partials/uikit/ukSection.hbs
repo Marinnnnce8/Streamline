@@ -1,7 +1,17 @@
 <section class="uk-section{{#if sectionClass}} {{sectionClass}}{{/if}}" id="{{#if id}}{{ida id}}{{else}}section-{{page.name}}{{/if}}">
-	{{#> ukContainer size=(default size ukContainer) class=(default class "")}}
+	{{#> ukContainer}}
 		{{#*inline "out"}}
-		<h2>{{heading}}</h2>
+		{{#if label}}
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">{{label}}</p>
+		{{/if}}
+		<div class="uk-grid-small" data-uk-grid>
+			<div class="{{#if (eq sectionClass "services")}}uk-width-3-4@m{{else}}uk-width-1-2@m{{/if}}">
+				<h2>{{heading}}</h2>
+			</div>
+			<div class="uk-flex uk-flex-right@m uk-flex-bottom{{#if (eq sectionClass "services")}} uk-width-1-4@m{{else}} uk-width-1-2@m{{/if}}">
+				{{> ukButton link="#" label=buttonLabel size="large" icon="arrow-right"}}					
+			</div>
+		</div>
 		{{#> out id="" class="" heading="" size=""}}{{/out}}
 		{{/inline}}
 	{{/ukContainer}}
