@@ -1,0 +1,34 @@
+<div class="news">
+
+	{{#> ukContainer}}
+		{{#*inline "out"}}
+
+		<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">{{label}}</p>
+		{{#> ukGrid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
+			{{#*inline "cells"}}
+
+				<div class="uk-width-3-4@l">
+					<h2>{{heading}}</h2>
+				</div>
+				<div class="uk-flex uk-flex-bottom uk-width-1-4@l">
+					{{> ukButton link="#" label="View all our news" size="large" icon="arrow-right"}}					
+				</div>
+
+			{{/inline}}
+		{{/ukGrid}}
+
+		{{/inline}}
+	{{/ukContainer}}
+
+
+	{{#> ukContainer}}
+		{{#*inline "out"}}
+
+		<div class="news-links">
+			{{> nbItems items=items.posts}}
+		</div>
+
+		{{/inline}}
+	{{/ukContainer}}
+	
+</div>

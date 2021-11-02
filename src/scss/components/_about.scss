@@ -14,23 +14,6 @@
 
 	&-images {
 		margin: $global-large-margin 0 $global-medium-margin;
-		padding: 0 $global-margin;
-
-		.uk-grid {
-			margin-left: -8px;
-
-			>* {
-				padding-left: 8px;
-			}
-		}
-
-		*+.uk-grid-margin-small,
-		.uk-grid+.uk-grid-row-small,
-		.uk-grid+.uk-grid-small,
-		.uk-grid-row-small>.uk-grid-margin,
-		.uk-grid-small>.uk-grid-margin {
-			margin-top: 8px;
-		}
 
 		.uk-grid>div {
 			&:last-of-type {
@@ -40,10 +23,6 @@
 			&:not(:last-of-type) {
 				min-height: 100px;
 			}
-		}
-
-		.uk-cover-container {
-			height: 100%;
 		}
 	}
 
@@ -69,7 +48,6 @@
 		}
 
 		&-images {
-			padding: 0;
 
 			.uk-grid>div {
 
@@ -95,14 +73,6 @@
 	@media (min-width: $breakpoint-medium) {
 		&-images {
 			margin: 120px 0;
-
-			.uk-grid {
-				margin-left: -$global-small-margin;
-
-				>* {
-					padding-left: $global-small-margin;
-				}
-			}
 		}
 
 		&-services {

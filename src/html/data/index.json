@@ -157,26 +157,26 @@
 		],
 		"posts": [
 			{
-				"title": "News Post 1",
+				"title": "Vacancies at streamline as company plans growth",
 				"url": "#",
-				"date_pub": "April 20th 2020",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-columns.jpg",
-				"getSummary": "To best optimise the page and provide the visitor with useful and informative text, it would be good to have a sentence or two included here."
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-1.jpg",
+				"getSummary": "In a pool of over 200 staff, almost 40% of our employees have worked at Streamline for more than 10 years."
 			},
 			{
-				"title": "News Post 2",
+				"title": "Festive sailing schedule to Orkney and Shetland",
 				"url": "#",
-				"date_pub": "April 17th 2020",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg",
-				"getSummary": "To best optimise the page and provide the visitor with useful and informative text, it would be good to have a sentence or two included here."
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-2.jpg",
+				"getSummary": "Last days for pre-Christmas delivery, our departure schedule, and opening hours over the festive period for the Aberdeen Terminal."
 			},
 			{
-				"title": "News Post 3",
+				"title": "Festive opening hours",
 				"url": "#",
-				"dates": "April 1st 2020, 5pm",
+				"dates": "June 16th 2021",
 				"location": "Somewhere over the rainbow",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-sprinkler.jpg",
-				"getSummary": "This is actually an event, to demonstrate the dates and location fields."
+				"getImage": "./img/news-3.jpg",
+				"getSummary": "Our offices and depots will be open as normal over the holiday season, with the exception of:"
 			}
 		],
 		"gallery": [

@@ -1,4 +1,5 @@
 .services {
+	padding: $global-medium-margin 0 0;
 
 	.uk-button-default {
 		margin-top: 50px;
@@ -38,20 +39,11 @@
 	}
 
 	@media (min-width: $breakpoint-small) {
-		padding: $global-medium-margin 0;
 
 		&-item {
 			background-color: $white;
 			padding: 35px $global-margin 80px 45px;
 			height: 280px;
-
-			&:nth-of-type(odd) {
-				border-right: 1px solid rgba($primary, .15);
-			}
-
-			&:not(:nth-last-of-type(-n+2)) {
-				border-bottom: 1px solid rgba($primary, .15);
-			}
 
 			@include hover {
 				.icon {
@@ -75,6 +67,18 @@
 		}
 	}
 
+	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium-max) {
+		&-item {
+			&:nth-of-type(odd) {
+				border-right: 1px solid rgba($primary, .15);
+			}
+
+			&:not(:nth-last-of-type(-n+2)) {
+				border-bottom: 1px solid rgba($primary, .15);
+			}
+		}
+	}
+
 	@media (min-width: $breakpoint-large) {
 		&-item {
 
@@ -92,7 +96,6 @@
 	}
 
 	@media (max-width: $breakpoint-xsmall-max) {
-		padding-top: $global-medium-margin;
 
 		&-item {
 			&:not(:last-of-type) {

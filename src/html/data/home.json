@@ -92,5 +92,49 @@
 				"title": "Read our Case Studies"
 			}
 		]
+	},
+	"sectors": {
+		"imageLinks": [
+			{
+				"src": "./img/sectors-1.jpg",
+				"title": "Construction Logistics"
+			},
+			{
+				"src": "./img/sectors-2.jpg",
+				"title": "Consumer Retail Logistics"
+			},
+			{
+				"src": "./img/sectors-3.jpg",
+				"title": "Chemical Logistics"
+			},
+			{
+				"src": "./img/sectors-4.jpg",
+				"title": "Energy Logistics"
+			},
+			{
+				"src": "./img/sectors-5.jpg",
+				"title": "Marine Logistics"
+			}
+		],
+		"links": [
+			{
+				"title": "Aerospace Logistics"
+			},
+			{
+				"title": "Defence Logistics"
+			},
+			{
+				"title": "Aquaculture Logistics"
+			},
+			{
+				"title": "Healthcare Logistics"
+			},
+			{
+				"title": "Manufacturing Logistics"
+			},
+			{
+				"title": "Food and Beverage Logistics"
+			}
+		]
 	}
 }

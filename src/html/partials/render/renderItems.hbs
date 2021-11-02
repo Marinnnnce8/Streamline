@@ -1,31 +1,20 @@
 {{#each items}}
 	{{#with this}}
 	<div>
-		<div class="uk-card uk-card-default">
+		<div class="uk-card">
 			<div class="uk-card-media-top">
-				<a href="{{url}}">
-					<img src="{{getImage}}" alt="{{title}}" width="440" height="293" loading="lazy">
-				</a>
-			</div>
-			<div class="uk-card-header">
-				<div class="uk-card-title">
-					<a class="uk-link-reset" href="{{url}}">{{title}}</a>
-				</div>
-				{{#if date_pub}}
-				<div class="uk-text-meta">{{date_pub}}</div>
-				{{/if}}
-				{{#if dates}}
-				<div class="uk-text-meta">{{dates}}</div>
-				{{/if}}
-				{{#if location}}
-				<div class="uk-text-meta">{{location}}</div>
-				{{/if}}
+				<a href="{{url}}" class="uk-position-cover uk-position-z-index" aria-label="{{title}}"></a>
+				<img src="{{getImage}}" alt="{{title}}" width="440" height="293" loading="lazy">
 			</div>
 			<div class="uk-card-body">
+				{{#if date_pub}}
+				<div class="uk-text-meta uk-margin-small-bottom uk-flex uk-flex-middle">{{> renderIcon name="calendar" class="uk-margin-small-right"}}{{date_pub}}</div>
+				{{/if}}				
+				<div class="uk-card-title">
+					<a class="uk-link-reset" href="{{url}}">{{title}}</a>
+				</div>				
 				<p>{{getSummary}}</p>
-			</div>
-			<div class="uk-card-footer">
-				<a class="uk-button uk-button-text" href="{{url}}">Read More</a>
+				{{> renderIcon name="arrow-right" class="uk-text-secondary"}}
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,55 @@
+@mixin hook-card {
+	.uk-text-meta {
+		font-weight: $light;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.uk-card-body {
+		padding: $global-margin $global-margin 50px;
+	}
+
+	@include hover {
+		.icon-arrow-right {
+			transform: translateX(15px);
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.uk-card-body {
+			padding: $global-gutter $global-margin 55px 35px;
+		}
+	}
+}
+
+@mixin hook-card-title {
+	font-weight: $normal;
+	letter-spacing: -0.01em;
+
+	@media (min-width: $breakpoint-medium) {
+		font-size: 34px;
+	}
+}
+
+@mixin hook-card-body {
+
+	p {
+		font-size: 16px;
+		font-weight: $normal;
+		line-height: 1.4;
+	}
+
+	.icon-arrow-right {
+		height: 32px;
+		position: absolute;
+		left: $global-margin;
+		bottom: 27px;
+		transition: $transition;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.icon-arrow-right {
+			left: 35px;
+		}
+	}
+}

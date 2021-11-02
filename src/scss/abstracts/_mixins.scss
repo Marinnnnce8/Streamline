@@ -214,6 +214,27 @@
 	}
 }
 
+@mixin bulletin {
+	&::before {
+		position: absolute;
+		left: $global-margin;
+		content: '';
+		display: block;
+		border-radius: 50%;
+		background-color: $blue-light;
+		width: 6px;
+		height: 6px;
+		top: 25px;
+	}
+
+	@media (min-width: $breakpoint-small) {
+		&::before {
+			left: $global-gutter;
+			top: 35px;
+		}
+	}
+}
+
 
 //
 // UIkit
