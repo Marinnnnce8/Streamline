@@ -50,10 +50,7 @@
 					<div class="uk-flex uk-flex-middle">
 						<button class="circle-button search-button uk-border-circle uk-position-relative uk-margin-small-left" aria-label="Search">{{> renderIcon name="search"}}<span role="presentation"></span></button>
 						<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true;" class="uk-width-1-1 search-menu uk-text-right">									
-							<form class="uk-search uk-search-default">
-								<span class="uk-search-icon-flip" data-uk-search-icon></span>
-								<input class="uk-search-input" type="search" placeholder="Search...">
-							</form>		
+							{{> search}}
 						</div>						
 						<a href="#" class="circle-button uk-border-circle uk-position-relative uk-margin-small-left uk-flex uk-flex-middle uk-flex-center uk-visible@m" aria-label="Login">{{> renderIcon name="user"}}</a>
 					</div>

@@ -1,7 +1,5 @@
 .banner {
 	min-height: 320px;
-	// clip-path: url('#bannerShapeTop');
-	// z-index: -1;
 
 	&:not(.banner-home) {
 		h1 {
@@ -9,22 +7,12 @@
 		}
 	}
 
-	// .shape-bottom {
-	// 	position: absolute;
-	// 	left: 0;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	bottom: 0;
-	// 	background-color: $primary;
-	// 	clip-path: url('#bannerShape');
-	// }
 	.shape-top {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
 		bottom: 0;
-		// background-color: $primary;
 		clip-path: url('#heroShape');
 	}
 

@@ -1,0 +1,31 @@
+.switch {
+	a {
+		text-decoration: none;
+	}
+
+	[data-uk-switcher] {
+		a {
+			background-color: $cold-grey;
+			font-size: 10px;
+			letter-spacing: .03em;
+			line-height: 1.1;
+			font-weight: $normal;
+			width: 100px;
+			height: 100px;
+			padding: $global-small-margin;
+
+			&[aria-expanded='true'] {
+				background-color: $white;
+			}
+
+			.icon {
+				height: 30px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		margin-top: -230px;
+	}
+}
