@@ -1,0 +1,152 @@
+.about {
+	padding: $global-large-margin 0;
+
+	.uk-button-primary {
+		box-shadow: 0 16px 40px rgba($primary, .35);
+		max-width: 280px;
+		padding-left: $global-margin;
+
+		.icon {
+			height: $global-gutter + 6;
+			margin-right: $global-margin;
+		}
+	}
+
+	&-images {
+		margin: $global-large-margin 0 $global-medium-margin;
+		padding: 0 $global-margin;
+
+		.uk-grid {
+			margin-left: -8px;
+
+			>* {
+				padding-left: 8px;
+			}
+		}
+
+		*+.uk-grid-margin-small,
+		.uk-grid+.uk-grid-row-small,
+		.uk-grid+.uk-grid-small,
+		.uk-grid-row-small>.uk-grid-margin,
+		.uk-grid-small>.uk-grid-margin {
+			margin-top: 8px;
+		}
+
+		.uk-grid>div {
+			&:last-of-type {
+				min-height: 200px;
+			}
+
+			&:not(:last-of-type) {
+				min-height: 100px;
+			}
+		}
+
+		.uk-cover-container {
+			height: 100%;
+		}
+	}
+
+	&-services {
+		.icon {
+			height: $global-large-margin;
+		}
+
+		.number {
+			font-size: 96px;
+			line-height: 1.2;
+			letter-spacing: -.01em;
+		}
+
+		.uk-grid>div {
+			padding: $global-medium-margin 0 $global-gutter;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		.uk-button-primary {
+			max-width: 220px;
+		}
+
+		&-images {
+			padding: 0;
+
+			.uk-grid>div {
+
+				&:last-of-type,
+				&:not(:last-of-type) {
+					min-height: 150px;
+				}
+			}
+		}
+
+		&-services {
+			.uk-grid>div {
+				margin-bottom: $global-margin;
+
+				&:nth-of-type(even) {
+					border-left: 1px solid rgba($grey-border-gold, .2);
+					padding-left: 45px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		&-images {
+			margin: 120px 0;
+
+			.uk-grid {
+				margin-left: -$global-small-margin;
+
+				>* {
+					padding-left: $global-small-margin;
+				}
+			}
+		}
+
+		&-services {
+			.uk-grid>div {
+				&:not(:first-of-type) {
+					border-left: 1px solid rgba($grey-border-gold, .2);
+					padding-left: $global-margin;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+		&-images {
+
+			.uk-grid>div {
+
+				&:last-of-type,
+				&:not(:last-of-type) {
+					min-height: 223px;
+				}
+			}
+		}
+
+		&-services {
+			.uk-grid>div {
+				&:not(:first-of-type) {
+					padding-left: 45px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		&-images {
+			.uk-grid>div:last-of-type {
+				width: 100%;
+			}
+		}
+
+		&-services {
+			.uk-grid>div {
+				border-bottom: 1px solid rgba($grey-border-gold, .2);
+			}
+		}
+	}
+}

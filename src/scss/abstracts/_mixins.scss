@@ -161,6 +161,59 @@
 	}
 }
 
+//Expandable arrow
+@mixin expandable-arrow {
+
+	span,
+	span::before,
+	span::after {
+		position: absolute;
+		content: '';
+	}
+
+	span {
+		height: 17px;
+		width: $global-gutter;
+		bottom: $global-gutter;
+		left: $global-margin;
+		transition: $transition;
+
+		&::before,
+		&::after {
+			display: block;
+		}
+
+		&::before {
+			height: 2px;
+			width: 100%;
+			background-color: $secondary;
+		}
+
+		&::after {
+			width: 13px;
+			height: 13px;
+			border-right: 2px solid $secondary;
+			border-bottom: 2px solid $secondary;
+			left: 100%;
+			transform: translate(calc(-100% + .5px), -50%) rotate(-45deg);
+			top: 50%;
+		}
+	}
+
+	@include hover {
+		span {
+			width: 72px;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		span {
+			bottom: $global-gutter;
+			left: 45px;
+		}
+	}
+}
+
 
 //
 // UIkit

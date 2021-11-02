@@ -3,5 +3,94 @@
 	"banner": {
 		"size": "large",
 		"src": "./img/home-banner.png"
+	},
+	"about": {
+		"intro": "For over 40 years, Streamline Shipping Group has provided unrivalled shipping, freight and transport solutions across Scotland, the wider UK and around the world.",
+		"text": [
+			{
+				"text": "We work with clients of all sizes and in all locations – from specialised sea freight transport to the north of Scotland, Orkney and Shetland to international freight forwarding across the globe."
+			}
+		],
+		"images": [
+			{
+				"src": "./img/about-1.jpg"
+			},
+			{
+				"src": "./img/about-2.jpg"
+			},
+			{
+				"src": "./img/about-3.jpg"
+			},
+			{
+				"src": "./img/about-4.jpg"
+			},
+			{
+				"src": "./img/about-5.jpg"
+			}
+		],
+		"numbers": [
+			{
+				"name": "puzzle",
+				"number": "55k+",
+				"text": "For over 40 years, Streamline"
+			},
+			{
+				"name": "haulage",
+				"number": "2k+",
+				"text": "For over 40 years, Streamline"
+			},
+			{
+				"name": "parcels",
+				"number": "55k+",
+				"text": "For over 40 years, Streamline"
+			},
+			{
+				"name": "globe",
+				"number": "2k+",
+				"text": "For over 40 years, Streamline"
+			}
+		]
+	},
+	"services": {
+		"items": [
+			{
+				"name": "parcels",
+				"title": "Parcels and Home Delivery",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service."
+			},
+			{
+				"name": "pallets",
+				"title": "Pallets and Local Distribution",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"name": "haulage",
+				"title": "UK and Europe Haulage",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"name": "globe",
+				"title": "International Forwarding",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"name": "cargo",
+				"title": "Ship Agency and Cargo Handling",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"name": "clearance",
+				"title": "Customs Clearance",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"name": "supply",
+				"title": "Chemical Production and Supply",
+				"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+			},
+			{
+				"title": "Read our Case Studies"
+			}
+		]
 	}
 }

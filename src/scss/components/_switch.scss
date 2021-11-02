@@ -1,4 +1,6 @@
 .switch {
+	margin-bottom: $global-small-margin;
+
 	a {
 		text-decoration: none;
 	}
@@ -27,5 +29,6 @@
 
 	@media (min-width: $breakpoint-medium) {
 		margin-top: -230px;
+		margin-bottom: $global-medium-margin;
 	}
 }

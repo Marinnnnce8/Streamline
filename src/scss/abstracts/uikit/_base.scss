@@ -2,8 +2,10 @@
 	letter-spacing: -.01em;
 }
 
-@mixin hook-base-h5 {
-	font-weight: $bold;
+@mixin hook-base-h4 {
+	@media (min-width: $breakpoint-medium) {
+		font-size: 26px;
+	}
 }
 
 @mixin hook-base-h5 {
