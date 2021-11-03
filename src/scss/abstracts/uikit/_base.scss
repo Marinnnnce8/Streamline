@@ -2,6 +2,12 @@
 	letter-spacing: -.01em;
 }
 
+@mixin hook-base-h1 {
+	@media (min-width: $breakpoint-medium) {
+		line-height: 1.2;
+	}
+}
+
 @mixin hook-base-h4 {
 	@media (min-width: $breakpoint-medium) {
 		font-size: 26px;

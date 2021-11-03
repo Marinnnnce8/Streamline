@@ -1,0 +1,11 @@
+.uk-breadcrumb {
+	.uk-container & {
+		margin-bottom: $global-margin;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.uk-container & {
+			margin-bottom: 50px;
+		}
+	}
+}

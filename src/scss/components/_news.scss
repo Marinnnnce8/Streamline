@@ -9,4 +9,21 @@
 	.nb-items-more {
 		margin-top: 80px;
 	}
+
+	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-small-max) {
+		[data-uk-nb-items] .uk-grid>div {
+			&:nth-of-type(odd) {
+				border-right: 1px solid $white;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		[data-uk-nb-items] .uk-grid>div {
+
+			&:not(:nth-child(3n+3)) {
+				border-right: 1px solid $white;
+			}
+		}
+	}
 }

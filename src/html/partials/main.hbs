@@ -67,12 +67,12 @@
 			{{#if page.banner}}
 				{{> banner}}
 				{{#if (neq page.name "home")}}
-					{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
+					{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-medium-top"}}
 						{{#*inline "out"}}
 							{{> ukBreadcrumb}}
-							{{#unless (eq page.name "listings")}}
+							{{#if (eq page.template.name "nb-styleguide")}}
 							<h1>{{page.h1}}</h1>
-							{{/unless}}
+							{{/if}}
 						{{/inline}}
 					{{/ukContainer}}				
 				{{/if}}

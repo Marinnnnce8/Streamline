@@ -2,3 +2,9 @@
 	letter-spacing: .15em;
 	font-weight: $normal;
 }
+
+@mixin hook-text-lead {
+	@media (min-width: $breakpoint-medium) {
+		line-height: $global-line-height;
+	}
+}

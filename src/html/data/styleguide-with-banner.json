@@ -4,19 +4,15 @@
 	},
 	"h1": "Internal styleguide page",
 	"banner": {
-		"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg",
+		"src": "./img/styleguide-banner.png",
 		"halfImg": true,
 		"size": "large"
 	},
 	"breadcrumbs": [
 		{
-			"name": "level1",
-			"title": "Level 1",
+			"name": "category",
+			"title": "Category",
 			"url": "#"
-		},
-		{
-			"name": "level2",
-			"title": "Level 2"
 		}
 	],
 	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content.",

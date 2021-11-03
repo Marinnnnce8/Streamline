@@ -1,0 +1,71 @@
+{
+	"h1": "Internal gateway page template",
+	"banner": {
+		"size": "small",
+		"src": "./img/gateway-banner.png",
+		"plain": true
+	},
+	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content. Sed ut per spiciatis unde omnis iste natus error sit voluptatem accusantium.",
+	"services": [
+		{
+			"name": "parcels",
+			"title": "Parcels and Home Delivery",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service."
+		},
+		{
+			"name": "pallets",
+			"title": "Pallets and Local Distribution",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		},
+		{
+			"name": "haulage",
+			"title": "UK and Europe Haulage",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		},
+		{
+			"name": "globe",
+			"title": "International Forwarding",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		},
+		{
+			"name": "cargo",
+			"title": "Ship Agency and Cargo Handling",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		},
+		{
+			"name": "clearance",
+			"title": "Customs Clearance",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		},
+		{
+			"name": "supply",
+			"title": "Chemical Production and Supply",
+			"text": "Streamline's International Freight Division has a reputation for very detailed and personal professional service. "
+		}
+	],
+	"items": {
+		"posts": [
+			{
+				"title": "Vacancies at streamline as company plans growth",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-1.jpg",
+				"getSummary": "In a pool of over 200 staff, almost 40% of our employees have worked at Streamline for more than 10 years."
+			},
+			{
+				"title": "Festive sailing schedule to Orkney and Shetland",
+				"url": "#",
+				"date_pub": "June 16th 2021",
+				"getImage": "./img/news-2.jpg",
+				"getSummary": "Last days for pre-Christmas delivery, our departure schedule, and opening hours over the festive period for the Aberdeen Terminal."
+			},
+			{
+				"title": "Festive opening hours",
+				"url": "#",
+				"dates": "June 16th 2021",
+				"getImage": "./img/news-3.jpg",
+				"getSummary": "Our offices and depots will be open as normal over the holiday season, with the exception of:"
+			}
+		]
+	}
+}

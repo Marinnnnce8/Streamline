@@ -1,0 +1,21 @@
+{{#> main}}
+{{#*inline "main"}}
+
+{{> renderIntro}}
+
+<section class="uk-section services">
+	{{#> ukContainer}}
+		{{#*inline "out"}}
+			{{> items type="services" items=page.services gridClass="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
+		{{/inline}}
+	{{/ukContainer}}
+</section>
+
+{{#> ukSection label="Latest news" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
+	{{#*inline "out"}}
+		{{> nbItems items=items.posts}}
+	{{/inline}}
+{{/ukSection}}
+
+{{/inline}}
+{{/main}}

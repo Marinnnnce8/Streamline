@@ -1,6 +1,10 @@
 .banner {
 	min-height: 320px;
 
+	h1 {
+		line-height: 1;
+	}
+
 	&:not(.banner-home) {
 		h1 {
 			font-weight: $light;
@@ -35,6 +39,10 @@
 		background-color: $primary;
 		clip-path: url('#blueHeroShape');
 		transform: translateY(15%);
+	}
+
+	&-plain {
+		padding-top: 115px;
 	}
 
 	&-half {
@@ -103,6 +111,14 @@
 		&-half {
 			.uk-flex {
 				padding-right: 115px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		&-home {
+			h1 {
+				display: none;
 			}
 		}
 	}

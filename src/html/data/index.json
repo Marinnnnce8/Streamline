@@ -173,8 +173,7 @@
 			{
 				"title": "Festive opening hours",
 				"url": "#",
-				"dates": "June 16th 2021",
-				"location": "Somewhere over the rainbow",
+				"date_pub": "June 16th 2021",
 				"getImage": "./img/news-3.jpg",
 				"getSummary": "Our offices and depots will be open as normal over the holiday season, with the exception of:"
 			}

@@ -6,7 +6,7 @@
 			{{#if name}}
 				{{> renderIcon name=name}}	
 			{{/if}}
-			<div class="{{#if @last}}uk-h3 uk-margin-remove-top uk-margin-bottom{{else}}uk-h4 uk-margin-small-bottom{{/if}}">{{title}}</div>
+			<div class="{{#unless name}}uk-h3 uk-margin-remove-top uk-margin-bottom{{else}}uk-h4 uk-margin-small-bottom{{/unless}}">{{title}}</div>
 			{{#if text}}
 				<div class="uk-position-relative uk-text-small uk-margin-small-top uk-visible@s">{{text}}</div>
 			{{/if}}
