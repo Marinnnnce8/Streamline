@@ -1,6 +1,12 @@
 {{#> main}}
 	{{#*inline "main"}}
 
+	{{#> ukContainer}}
+		{{#*inline "out"}}
+			<h1 class="uk-hidden@s uk-text-bold">{{page.h1}}</h1>
+		{{/inline}}
+	{{/ukContainer}}	
+
 	{{> switch}}
 
 	<section class="uk-section about">
@@ -15,18 +21,23 @@
 					<div class="uk-flex uk-flex-right uk-flex-bottom">
 						<p class="uk-text-lead">For over 40 years, Streamline Shipping Group has provided unrivalled shipping, freight and transport solutions across Scotland, the wider UK and around the world.</p>
 					</div>
+					<div class="uk-hidden@s">
+						<p>We work with clients of all sizes and in all locations – from specialised sea freight transport to the north of Scotland, Orkney and Shetland to international freight forwarding across the globe.</p>
+					</div>					
 					<div class="uk-flex uk-flex-bottom">
-						<div class="uk-flex">
-							<div class="uk-margin-small-right" data-uk-lightbox>
+						<div class="uk-flex uk-flex-wrap">
+							<div class="uk-margin-small-top" data-uk-lightbox>
 								<a class="uk-button uk-button-primary uk-button-large uk-box-shadow-medium" href="https://youtu.be/jmOuxZAJifA" data-caption="Company Video">
 									{{> renderIcon name="play" class="icon-left"}}
 									Company Video
 								</a>
 							</div>
-							{{> ukButton link="#" label="Find out more about us" icon="arrow-right"}}
+							<div class="uk-margin-small-top">
+								{{> ukButton link="#" label="Find out more about us" icon="arrow-right"}}
+							</div>
 						</div>						
 					</div>
-					<div>
+					<div class="uk-visible@s">
 						<p>We work with clients of all sizes and in all locations – from specialised sea freight transport to the north of Scotland, Orkney and Shetland to international freight forwarding across the globe.</p>
 					</div>					
 				{{/inline}}
@@ -36,7 +47,7 @@
 		{{> items type="images" items=page.about.images gridClass="uk-grid-small uk-child-width-1-5@s uk-child-width-1-2"}}
 		{{#> ukContainer}}
 			{{#*inline "out"}}
-			{{> items type="numbers" items=page.sectors.numbers gridClass="uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-2@s"}}	
+			{{> items type="numbers" items=page.about.numbers gridClass="uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-2@s"}}	
 			{{/inline}}
 		{{/ukContainer}}			
 	</section>

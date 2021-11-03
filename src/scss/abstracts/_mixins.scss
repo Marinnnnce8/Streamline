@@ -235,6 +235,49 @@
 	}
 }
 
+@mixin streamline-shape($shape) {
+
+	.shape-base,
+	.shape-gold,
+	.shape-blue {
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+
+	.shape-base {
+		top: 0;
+		bottom: 0;
+		clip-path: url('##{$shape}HeroShape');
+	}
+
+	.shape-gold {
+		bottom: -3px;
+		height: 100px;
+		background-color: $secondary;
+		clip-path: url('##{$shape}HeroGoldShape');
+	}
+
+	.shape-blue {
+		bottom: 0;
+		height: 70px;
+		background-color: $primary;
+		clip-path: url('##{$shape}HeroBlueShape');
+		transform: translateY(15%);
+	}
+
+	@media (min-width: $breakpoint-small) {
+		.shape-blue {
+			height: 110px;
+		}
+
+		.shape-gold {
+			bottom: -10px;
+			height: 160px;
+		}
+	}
+}
+
 
 //
 // UIkit

@@ -2,7 +2,7 @@
 	li {
 		background-color: $white;
 		border-bottom: 3px solid $secondary;
-		padding: $global-medium-margin $global-margin $global-gutter;
+		padding: $global-margin $global-margin 45px;
 	}
 
 	.uk-button-secondary {
@@ -18,6 +18,12 @@
 
 		.uk-search {
 			max-width: 50%;
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		.uk-button-secondary {
+			max-width: 240px;
 		}
 	}
 }

@@ -2,8 +2,9 @@
 	padding: $global-large-margin 0;
 
 	.uk-button-primary {
-		max-width: 280px;
 		padding-left: $global-margin;
+		padding-top: 14px;
+		padding-bottom: 14px;
 
 		.icon {
 			height: $global-gutter + 6;
@@ -11,9 +12,33 @@
 		}
 	}
 
+	.uk-button-default {
+		min-height: 64px;
+	}
+
+	.uk-grid h2 {
+		margin-bottom: 0;
+	}
+
 	@media (min-width: $breakpoint-small) {
 		.uk-button-primary {
 			max-width: 220px;
+		}
+
+		[data-uk-lightbox] {
+			margin-right: $global-small-margin;
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		padding-bottom: 110px;
+
+		.uk-button-primary {
+			justify-content: space-between;
+		}
+
+		.uk-button-default {
+			padding-left: 28px;
 		}
 	}
 }

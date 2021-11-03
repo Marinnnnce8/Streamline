@@ -40,6 +40,8 @@
 	}
 
 	&-numbers {
+		padding-top: $global-gutter;
+
 		.icon {
 			height: $global-large-margin;
 		}
@@ -255,6 +257,8 @@
 		}
 
 		&-numbers {
+			padding-top: 110px;
+
 			.uk-grid>div {
 				&:not(:first-of-type) {
 					border-left: 1px solid rgba($grey-border-gold, .2);

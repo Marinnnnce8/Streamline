@@ -1,7 +1,7 @@
 @mixin hook-section {
 
 	.uk-button-default.uk-button-large {
-		margin-bottom: $global-large-margin;
+		margin-bottom: $global-large-margin - 5;
 	}
 
 	.uk-grid h2 {
@@ -9,12 +9,19 @@
 	}
 
 	@media (min-width: $breakpoint-medium) {
+		.uk-grid h2,
 		.uk-button-default.uk-button-large {
-			margin-bottom: $global-large-margin;
+			margin-bottom: 65px;
 		}
+	}
 
-		.uk-grid h2 {
-			margin-bottom: 50px;
+	@media (max-width: $breakpoint-xsmall-max) {
+
+		[data-uk-lightbox],
+		.uk-button-primary,
+		.uk-button-default {
+			max-width: 280px;
+			width: 100%;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 <div class="banner uk-position-relative uk-light{{#if (eq page.name "home")}} banner-home{{/if}}{{#if page.banner.plain}} banner-plain{{/if}}{{#if page.banner.halfImg}} banner-half{{/if}}">
-	<div class="shape-top uk-cover-container" role="presentation">
+	<div class="shape-base uk-cover-container" role="presentation">
 		{{#if page.banner.halfImg}}
 			<div class="banner-img uk-overflow-hidden">
 		{{/if}}
@@ -8,37 +8,15 @@
 			</div>
 		{{/if}}
 	</div>
-	<span class="shape-middle" role="presentation"></span>
-	<span class="shape-bottom" role="presentation"></span>
-	{{!-- <span class="shape-bottom" role="presentation"></span> --}}
-	{{!-- {{#if (eq page.name "home")}} --}}
-		{{!-- {{#if page.banner.halfImg}}
-			<div class="banner-img uk-overflow-hidden">
-		{{/if}}
-			<img src="{{#if page.banner.src}}{{page.banner.src}}{{else}}{{aws}}/img/placeholder-castle-banner.jpg{{/if}}" data-uk-cover alt="">
-		{{#if page.banner.halfImg}}
+	<span class="shape-gold" role="presentation"></span>
+	<span class="shape-blue" role="presentation"></span>
+	<div class="uk-position-relative">
+		{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
+			{{#*inline "out"}}
+			<div class="uk-flex">
+				<h1{{#if (eq page.name "home")}} class="uk-visible@s"{{/if}}>{{page.h1}}</h1>
 			</div>
-		{{/if}} --}}
-		<div class="uk-position-relative">
-			{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
-				{{#*inline "out"}}
-				<div class="uk-flex">
-					<h1>{{page.h1}}</h1>
-				</div>
-				{{/inline}}
-			{{/ukContainer}}
-		</div>
-	{{!-- {{else if page.banner.halfImg}}
-		<img src="{{#if page.banner.src}}{{page.banner.src}}{{else}}{{aws}}/img/placeholder-castle-banner.jpg{{/if}}" data-uk-cover alt="">
-		<div class="uk-position-relative uk-visible@l">
-			{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
-				{{#*inline "out"}}
-				<div class="uk-flex">
-					<h1>{{page.h1}}</h1>
-				</div>
-				{{/inline}}
-			{{/ukContainer}}
-		</div>
-		{{else}} --}}
-	{{!-- {{/if}} --}}
+			{{/inline}}
+		{{/ukContainer}}
+	</div>
 </div>

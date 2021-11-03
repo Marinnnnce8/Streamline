@@ -8,27 +8,54 @@
 	[data-uk-switcher] {
 		a {
 			background-color: $cold-grey;
-			font-size: 10px;
+			font-size: 8px;
 			letter-spacing: .03em;
 			line-height: 1.1;
 			font-weight: $normal;
-			width: 100px;
-			height: 100px;
-			padding: $global-small-margin;
+			width: 60px;
+			height: 60px;
 
 			&[aria-expanded='true'] {
 				background-color: $white;
 			}
 
 			.icon {
-				height: 30px;
-				margin-bottom: 15px;
+				height: $global-margin;
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		margin-top: $global-margin;
+
+		[data-uk-switcher] {
+			a {
+				width: 100px;
+				height: 100px;
+				font-size: 10px;
+				padding: $global-small-margin;
+
+				.icon {
+					height: $global-gutter;
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}
 
 	@media (min-width: $breakpoint-medium) {
-		margin-top: -230px;
+		margin-top: -175px;
 		margin-bottom: $global-medium-margin;
+	}
+
+	@media (min-width: $breakpoint-large) {
+		margin-top: -230px;
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		.uk-h4 {
+			font-size: 19px;
+		}
 	}
 }

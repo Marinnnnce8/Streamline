@@ -23,7 +23,7 @@
 	// 	// z-index: -1;
 	// }
 
-	.shape-bottom {
+	.shape-base {
 		position: absolute;
 		left: 0;
 		height: 100%;
@@ -33,14 +33,14 @@
 		clip-path: url('#footerShape');
 	}
 
-	.shape-top {
+	.shape-gold {
 		position: absolute;
 		left: 0;
 		bottom: 100%;
 		width: 100%;
 		height: 155px;
 		background-color: $secondary;
-		clip-path: url('#videoShapeTop');
+		clip-path: url('#videoShape');
 		transform: translateY(65%);
 	}
 
