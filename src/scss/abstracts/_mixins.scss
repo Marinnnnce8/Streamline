@@ -248,22 +248,19 @@
 	.shape-base {
 		top: 0;
 		bottom: 0;
-		clip-path: url('##{$shape}HeroShape');
+		clip-path: url('##{$shape}Shape');
 	}
 
 	.shape-gold {
-		bottom: -3px;
 		height: 100px;
 		background-color: $secondary;
-		clip-path: url('##{$shape}HeroGoldShape');
+		clip-path: url('##{$shape}GoldShape');
 	}
 
 	.shape-blue {
-		bottom: 0;
-		height: 70px;
 		background-color: $primary;
-		clip-path: url('##{$shape}HeroBlueShape');
-		transform: translateY(15%);
+		height: 70px;
+		clip-path: url('##{$shape}BlueShape');
 	}
 
 	@media (min-width: $breakpoint-small) {
@@ -272,8 +269,7 @@
 		}
 
 		.shape-gold {
-			bottom: -10px;
-			height: 160px;
+			height: 155px;
 		}
 	}
 }

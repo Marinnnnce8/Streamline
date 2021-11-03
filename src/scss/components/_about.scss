@@ -14,6 +14,7 @@
 
 	.uk-button-default {
 		min-height: 64px;
+		padding-left: 28px;
 	}
 
 	.uk-grid h2 {
@@ -35,10 +36,6 @@
 
 		.uk-button-primary {
 			justify-content: space-between;
-		}
-
-		.uk-button-default {
-			padding-left: 28px;
 		}
 	}
 }

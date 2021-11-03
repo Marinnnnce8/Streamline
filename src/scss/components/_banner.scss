@@ -1,7 +1,15 @@
 .banner {
 	min-height: 320px;
 	padding-top: $global-large-margin;
-	@include streamline-shape('home');
+
+	.shape-gold {
+		bottom: -3px;
+	}
+
+	.shape-blue {
+		bottom: 0;
+		transform: translateY(15%);
+	}
 
 	h1 {
 		line-height: 1;
@@ -30,15 +38,19 @@
 
 	&-plain,
 	&-half {
-		@include streamline-shape('large');
+		@include streamline-shape('largeHero');
 	}
 
 	&-home {
-		@include streamline-shape('home');
+		@include streamline-shape('homeHero');
 	}
 
 	@media (min-width: $breakpoint-small) {
 		padding-top: 110px;
+
+		.shape-gold {
+			bottom: -10px;
+		}
 
 		&:not(.banner-home) {
 			min-height: 445px;

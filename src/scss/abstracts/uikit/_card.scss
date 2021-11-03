@@ -7,6 +7,7 @@
 
 	.uk-card-body {
 		padding: $global-margin $global-margin 50px;
+		background-color: $cold-grey;
 	}
 
 	@include hover {
@@ -28,6 +29,12 @@
 
 	@media (min-width: $breakpoint-medium) {
 		font-size: 34px;
+	}
+}
+
+@mixin hook-card-media-top {
+	img {
+		width: 100%;
 	}
 }
 

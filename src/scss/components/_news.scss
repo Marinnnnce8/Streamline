@@ -1,15 +1,6 @@
 .news {
 	background-color: $off-white;
-
-	[data-uk-nb-items] {
-		.uk-grid {
-			box-shadow: $global-large-box-shadow;
-		}
-	}
-
-	.nb-items-more {
-		margin-top: 80px;
-	}
+	margin-bottom: -135px;
 
 	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-small-max) {
 		[data-uk-nb-items] .uk-grid>div {
@@ -19,7 +10,12 @@
 		}
 	}
 
+	@media (min-width: $breakpoint-small) {
+		margin-bottom: -160px;
+	}
+
 	@media (min-width: $breakpoint-medium) {
+
 		[data-uk-nb-items] .uk-grid>div {
 
 			&:not(:nth-child(3n+3)) {
