@@ -12,8 +12,8 @@
 			letter-spacing: .03em;
 			line-height: 1.1;
 			font-weight: $normal;
-			width: 60px;
-			height: 60px;
+			width: $global-gutter * 2;
+			height: $global-gutter * 2;
 
 			&[aria-expanded='true'] {
 				background-color: $white;
@@ -51,6 +51,18 @@
 
 	@media (min-width: $breakpoint-large) {
 		margin-top: -230px;
+	}
+
+	@media (max-width: $breakpoint-small-max) {
+		.uk-flex-right>div {
+			&:first-of-type a {
+				box-shadow: -10px -5px 15px 0 rgba($primary, .07);
+			}
+
+			&:last-of-type a {
+				box-shadow: 10px -5px 15px 0 rgba($primary, .07);
+			}
+		}
 	}
 
 	@media (max-width: $breakpoint-xsmall-max) {

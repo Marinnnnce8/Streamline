@@ -94,6 +94,7 @@
 			line-height: 1.2;
 			letter-spacing: -.02em;
 			transition: $transition;
+			@include text-truncate;
 		}
 
 		.icon {

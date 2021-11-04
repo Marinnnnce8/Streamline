@@ -2,12 +2,14 @@
 	color: $white;
 	@include streamline-shape('footer');
 
-	.shape-blue {
-		bottom: calc(100% - 1px);
-	}
+	.shape {
+		&-blue {
+			bottom: calc(100% - 1px);
+		}
 
-	.shape-gold {
-		bottom: calc(100% + 15px);
+		&-gold {
+			bottom: calc(100% + 15px);
+		}
 	}
 
 	.uk-h3,
@@ -34,8 +36,16 @@
 	.uk-button-default {
 		border-color: rgba($white, .5);
 
+		&::before {
+			background-color: $blue-dark;
+		}
+
 		.icon {
 			color: $gold-lighter;
+		}
+
+		@include hover {
+			border-color: $blue-dark;
 		}
 	}
 
@@ -64,21 +74,24 @@
 
 	&-bottom {
 		font-size: 14px;
-		padding-bottom: 27px;
+	}
+
+	.links,
+	.social a,
+	.legal a {
+		@include hover {
+			color: $gold-lighter;
+
+			.icon {
+				color: $gold-lighter;
+			}
+		}
 	}
 
 	.links {
 		a {
 			font-size: 24px;
 			line-height: 1.4;
-
-			@include hover {
-				color: $secondary;
-
-				.icon {
-					color: $secondary;
-				}
-			}
 		}
 
 		.icon {
@@ -91,10 +104,10 @@
 		margin-bottom: $global-medium-margin;
 
 		a {
-			font-size: 20px;
+			font-size: $global-margin;
 
 			&:not(:first-of-type) {
-				margin-left: 30px;
+				margin-left: $global-gutter;
 			}
 
 			span {
@@ -109,8 +122,13 @@
 		}
 	}
 
+	.copyright,
 	.legal {
-		padding: $global-small-margin 0;
+		margin-bottom: $global-gutter;
+	}
+
+	.legal {
+		padding: $global-small-margin 0 0;
 
 		ul {
 			margin: 0;
@@ -125,10 +143,6 @@
 
 				a {
 					color: $white;
-
-					@include hover {
-						color: $secondary;
-					}
 				}
 
 				@media (max-width: $breakpoint-mobile) {
@@ -183,7 +197,7 @@
 			margin-bottom: $global-large-margin;
 
 			&:not(:first-of-type) {
-				margin-left: 40px;
+				margin-left: $global-medium-margin;
 			}
 		}
 
