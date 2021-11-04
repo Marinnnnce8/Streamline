@@ -6,14 +6,21 @@
 	}
 
 	.uk-button-secondary {
-		justify-content: space-between;
 		padding-left: 35px;
 		padding-right: 35px;
 	}
 
+	.uk-input {
+		background-color: $off-white;
+	}
+
 	@media (min-width: $breakpoint-small) {
+		.uk-width-auto\@m {
+			min-width: 250px;
+		}
+
 		li {
-			padding: $global-medium-margin $global-gutter * 2 $global-gutter * 2;
+			padding: $global-medium-margin 65px $global-gutter * 2;
 		}
 
 		.uk-search {
@@ -21,9 +28,9 @@
 		}
 	}
 
-	@media (max-width: $breakpoint-xsmall-max) {
-		.uk-button-secondary {
-			max-width: 240px;
+	@media (max-width: $breakpoint-small-max) {
+		.uk-grid {
+			flex-direction: column;
 		}
 	}
 }

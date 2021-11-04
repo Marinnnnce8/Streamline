@@ -28,9 +28,9 @@
 				<div class="uk-flex">
 					<form id="nb-form-{{page.name}}-quote" class="uk-form-stacked InputfieldForm uk-width-1-1" method="post" data-uk-nb-form novalidate data-colspacing="1">
 						<div class='uk-grid-small uk-flex-bottom' data-uk-grid>
-							{{> nbInput class="uk-width-1-3@m" name="name" title="Your name"}}
-							{{> nbInput class="uk-width-1-3@m" name="company_name" title="Company name"}}
-							<div class="uk-width-1-4@m">
+							{{> nbInput class="uk-width-expand" name="name" title="Your name" placeholder="Your name"}}
+							{{> nbInput class="uk-width-expand" name="company_name" title="Company name" placeholder="Company name"}}
+							<div class="uk-width-auto@m">
 								<button id="nb-form-{{page.name}}_continue" class="uk-button uk-button-secondary uk-box-shadow-medium uk-width-1-1" name="continue" value="Continue" type="submit">
 									Continue
 									{{> renderIcon name="arrow-right"}}

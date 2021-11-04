@@ -6,7 +6,7 @@
 	letter-spacing: -.02em;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	transition: $transition;
 
 	&:not(.uk-button-text) {
@@ -28,7 +28,7 @@
 
 	&:not(.uk-button-small):not(.uk-button-large):not(.uk-button-text) {
 		padding-top: 15px;
-        padding-bottom: 15px;
+		padding-bottom: 15px;
 	}
 
 	&:not(.uk-button-large):not(.uk-button-text) {
@@ -60,16 +60,20 @@
 			margin-right: $global-small-margin;
 		}
 	}
+
+	@media (max-width: $breakpoint-small-max) {
+		max-width: 280px;
+	}
 }
 
 @mixin hook-button-small {
-    padding-top: 11px;
-    padding-bottom: 11px;
+	padding-top: 11px;
+	padding-bottom: 11px;
 }
 
 @mixin hook-button-large {
 	padding-top: 16px;
-    padding-bottom: 17px;
+	padding-bottom: 17px;
 }
 
 @mixin hook-button-default {

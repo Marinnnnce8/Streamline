@@ -31,13 +31,12 @@
 		width: 100%;
 	}
 
-	.uk-button-large {
-		justify-content: space-between;
-		max-width: 280px;
-	}
-
 	.uk-button-default {
 		border-color: rgba($white, .5);
+
+		.icon {
+			color: $gold-lighter;
+		}
 	}
 
 	&-inner {
@@ -54,7 +53,7 @@
 
 		a[href*='tel'],
 		a[href*='mailto'] {
-			color: $secondary;
+			color: $gold-lighter;
 			border-bottom: 1px solid rgba($white, .3);
 
 			@include hover {

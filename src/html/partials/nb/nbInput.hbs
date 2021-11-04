@@ -33,7 +33,7 @@
 
 		{{else}}
 
-		<input id="nb-form-{{page.name}}_{{name}}" class="uk-input" name="{{name}}" type="{{default type "text"}}" {{#if title}}title="{{title}}" required{{/if}}>
+		<input id="nb-form-{{page.name}}_{{name}}" class="uk-input" name="{{name}}" type="{{default type "text"}}" {{#if title}}title="{{title}}" required{{/if}}{{#if placeholder}} placeholder="{{placeholder}}"{{/if}}>
 
 		{{/if}}
 		{{/if}}

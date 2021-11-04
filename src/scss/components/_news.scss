@@ -1,6 +1,6 @@
 .news {
 	background-color: $off-white;
-	margin-bottom: -135px;
+	margin-bottom: -255px;
 
 	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-small-max) {
 		[data-uk-nb-items] .uk-grid>div {
@@ -11,7 +11,7 @@
 	}
 
 	@media (min-width: $breakpoint-small) {
-		margin-bottom: -160px;
+		margin-bottom: -335px;
 	}
 
 	@media (min-width: $breakpoint-medium) {
