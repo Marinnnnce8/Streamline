@@ -2,9 +2,9 @@
 	{{#> ukContainer}}
 		{{#*inline "out"}}
 		{{#if label}}
-			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">{{label}}</p>
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">{{label}}</p>
 		{{/if}}
-		<div class="uk-grid-small" data-uk-grid>
+		<div class="uk-grid-small" data-uk-grid data-uk-scrollspy="cls: uk-animation-fade; delay: 350; target: >div">
 			<div class="{{#if (eq sectionClass "services")}}uk-width-3-4@m{{else}}uk-width-1-2@m{{/if}}">
 				<h2>{{heading}}</h2>
 			</div>

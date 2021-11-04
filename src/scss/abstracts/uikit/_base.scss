@@ -32,6 +32,11 @@
 @mixin hook-base-blockquote {
 	background-color: $white;
 	letter-spacing: .02em;
-	padding: $global-gutter $global-gutter * 2 $global-medium-margin;
+	padding: $global-gutter $global-gutter $global-medium-margin;
 	border-left: 3px solid rgba($secondary, .7);
+
+	@media (min-width: $breakpoint-medium) {
+		padding: $global-gutter $global-gutter * 2 $global-medium-margin;
+		font-size: 30px;
+	}
 }

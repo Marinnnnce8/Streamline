@@ -186,14 +186,14 @@
 		&::before {
 			height: 2px;
 			width: 100%;
-			background-color: $secondary;
+			background-color: $grey-border-gold;
 		}
 
 		&::after {
 			width: 13px;
 			height: 13px;
-			border-right: 2px solid $secondary;
-			border-bottom: 2px solid $secondary;
+			border-right: 2px solid $grey-border-gold;
+			border-bottom: 2px solid $grey-border-gold;
 			left: 100%;
 			transform: translate(calc(-100% + .5px), -50%) rotate(-45deg);
 			top: 50%;

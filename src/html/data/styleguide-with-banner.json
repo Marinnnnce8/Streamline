@@ -6,7 +6,7 @@
 	"banner": {
 		"src": "./img/styleguide-banner.png",
 		"halfImg": true,
-		"size": "large"
+		"size": "medium"
 	},
 	"breadcrumbs": [
 		{

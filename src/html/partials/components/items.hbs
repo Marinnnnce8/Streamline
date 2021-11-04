@@ -1,9 +1,9 @@
-<div class="items items-{{type}}{{#if (eq type "services")}} uk-box-shadow-large{{/if}}">
+<div class="items items-{{type}}{{#if (eq type "services")}} uk-box-shadow-large{{/if}}" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">
 	{{#if itemLabel}}
 		<p class="uk-text-uppercase uk-text-secondary label">{{itemLabel}}</p>
 	{{/if}}
 
-	{{#> ukGrid class=gridClass}}
+	{{#> ukGrid class=gridClass dataUkScrollspy="cls: uk-animation-fade; delay: 300; target: .uk-grid>div"}}
 		{{#*inline "cells"}}
 
 		{{#if (eq type "images")}}

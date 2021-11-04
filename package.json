@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "mmenu-js": "^8.5.24",
-    "uikit": "^3.7.3"
+    "uikit": "^3.8.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

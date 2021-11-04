@@ -1,4 +1,14 @@
 .template-gateway {
+	.services {
+		padding-bottom: $global-large-margin;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.services {
+			padding-bottom: 110px;
+		}
+	}
+
 	@media (min-width: $breakpoint-large) {
 		.banner-plain {
 			padding-top: 220px;

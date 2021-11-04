@@ -42,4 +42,8 @@
 	font-weight: $normal;
 	letter-spacing: -.01em;
 	transition: $transition;
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		font-size: 22px;
+	}
 }

@@ -12,7 +12,7 @@
 	<section class="uk-section about">
 		{{#> ukContainer}}
 			{{#*inline "out"}}
-			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">our story</p>
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">our story</p>
 			{{#> ukGrid class="uk-child-width-1-2@m"}}
 				{{#*inline "cells"}}
 					<div>
@@ -61,8 +61,8 @@
 	<section class="uk-section sectors">
 		{{#> ukContainer}}
 			{{#*inline "out"}}
-			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label">our sectors</p>
-			{{#> ukGrid class="uk-child-width-1-2@m"}}
+			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">our sectors</p>
+			{{#> ukGrid class="uk-child-width-1-2@m" dataUkScrollspy="cls: uk-animation-fade; delay: 350; target: .uk-grid>div"}}
 				{{#*inline "cells"}}
 					<div>
 						<h2>We’re experts in complex and difficult jobs</h2>

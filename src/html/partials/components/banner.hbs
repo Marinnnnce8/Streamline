@@ -13,8 +13,8 @@
 	<div class="uk-position-relative">
 		{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
 			{{#*inline "out"}}
-			<div class="uk-flex">
-				<h1{{#if (eq page.name "home")}} class="uk-visible@s"{{/if}}>{{page.h1}}</h1>
+			<div class="uk-flex{{#unless page.banner.plain}} uk-flex-right@l{{/unless}}">
+				<h1{{#if (eq page.name "home")}} class="uk-visible@s"{{else if page.banner.halfImg}} class="uk-visible@m uk-width-1-2@l"{{/if}}>{{page.h1}}</h1>
 			</div>
 			{{/inline}}
 		{{/ukContainer}}

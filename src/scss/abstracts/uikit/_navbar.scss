@@ -25,6 +25,10 @@
 .uk-navbar-right {
 	margin-left: 5px;
 
+	.uk-search {
+		max-width: 370px;
+	}
+
 	@media (min-width: $breakpoint-medium) {
 		padding: $global-small-margin 0;
 	}
