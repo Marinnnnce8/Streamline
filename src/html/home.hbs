@@ -9,10 +9,12 @@
 
 	{{> switch}}
 
-	<section class="uk-section about">
+	<section class="uk-section about" id="section-about-home">
 		{{#> ukContainer}}
 			{{#*inline "out"}}
+
 			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">our story</p>
+
 			{{#> ukGrid class="uk-child-width-1-2@m"}}
 				{{#*inline "cells"}}
 					<div>
@@ -41,27 +43,36 @@
 						<p>We work with clients of all sizes and in all locations – from specialised sea freight transport to the north of Scotland, Orkney and Shetland to international freight forwarding across the globe.</p>
 					</div>					
 				{{/inline}}
-			{{/ukGrid}}		
+			{{/ukGrid}}	
+
 			{{/inline}}
 		{{/ukContainer}}
+
 		{{> items type="images" items=page.about.images gridClass="uk-grid-small uk-child-width-1-5@s uk-child-width-1-2"}}
+
 		{{#> ukContainer}}
 			{{#*inline "out"}}
-			{{> items type="numbers" items=page.about.numbers gridClass="uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-2@s"}}	
+
+			{{> items type="numbers" items=page.about.numbers gridClass="uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-2@s"}}
+
 			{{/inline}}
 		{{/ukContainer}}			
 	</section>
 
-	{{#> ukSection label="our services" heading="Streamline offers a range of haulage, shipping and freight logistics services" sectionClass="services" buttonLabel="View all our services"}}
+	{{#> ukSection label="our services" id="section-services-home" heading="Streamline offers a range of haulage, shipping and freight logistics services" sectionClass="services" buttonLabel="View all our services"}}
 		{{#*inline "out"}}
+
 			{{> items type="services" items=page.services gridClass="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
+
 		{{/inline}}
 	{{/ukSection}}
 
-	<section class="uk-section sectors">
+	<section class="uk-section sectors" id="section-sectors-home">
 		{{#> ukContainer}}
 			{{#*inline "out"}}
+
 			<p class="uk-text-uppercase uk-text-secondary uk-margin-small-bottom label" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">our sectors</p>
+
 			{{#> ukGrid class="uk-child-width-1-2@m" dataUkScrollspy="cls: uk-animation-fade; delay: 350; target: .uk-grid>div"}}
 				{{#*inline "cells"}}
 					<div>
@@ -71,20 +82,26 @@
 						{{> ukButton link="#" label="View all our sectors" size="large" icon="arrow-right"}}					
 					</div>
 				{{/inline}}
-			{{/ukGrid}}		
+			{{/ukGrid}}
+
 			{{/inline}}
 		{{/ukContainer}}
+
 		{{> items type="image-links" items=page.sectors.imageLinks gridClass="uk-grid-small uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s"}}
 		{{#> ukContainer}}
 			{{#*inline "out"}}
+			
 			{{> items type="links" items=page.sectors.links gridClass="uk-grid-medium uk-child-width-1-2@m" itemLabel="Other sectors"}}	
+
 			{{/inline}}
 		{{/ukContainer}}		
 	</section>
 	
-	{{#> ukSection label="Latest news" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
+	{{#> ukSection label="Latest news" id="section-news-home" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
 		{{#*inline "out"}}
+		
 			{{> nbItems items=items.posts}}
+			
 		{{/inline}}
 	{{/ukSection}}
 

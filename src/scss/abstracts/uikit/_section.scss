@@ -1,5 +1,4 @@
 @mixin hook-section {
-
 	.uk-button-default.uk-button-large {
 		margin-bottom: $global-large-margin - 5;
 	}
@@ -9,6 +8,7 @@
 	}
 
 	@media (min-width: $breakpoint-medium) {
+
 		.uk-grid h2,
 		.uk-button-default.uk-button-large {
 			margin-bottom: 65px;

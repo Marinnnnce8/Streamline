@@ -3,13 +3,15 @@
 
 {{> renderIntro}}
 
-<section class="uk-section">
-	{{#> ukContainer}}
-		{{#*inline "out"}}
-			{{> nbItems items=page.items.posts loadMore=true}}
-		{{/inline}}
-	{{/ukContainer}}
-</section>
+	<div class="uk-section" id="section-news-listings">
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+
+				{{> nbItems items=page.items.posts loadMore=true}}
+				
+			{{/inline}}
+		{{/ukContainer}}
+	</div>
 
 {{/inline}}
 {{/main}}

@@ -1,21 +1,25 @@
 {{#> main}}
 {{#*inline "main"}}
 
-{{> renderIntro}}
+	{{> renderIntro}}
 
-<div class="uk-section services">
-	{{#> ukContainer}}
+	<div class="uk-section services" id="section-services-gateway">
+		{{#> ukContainer}}
+			{{#*inline "out"}}
+
+				{{> items type="services" items=page.services gridClass="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
+
+			{{/inline}}
+		{{/ukContainer}}
+	</div>
+
+	{{#> ukSection label="Latest news" id="section-news-gateway" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
 		{{#*inline "out"}}
-			{{> items type="services" items=page.services gridClass="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s"}}
-		{{/inline}}
-	{{/ukContainer}}
-</div>
 
-{{#> ukSection label="Latest news" heading="Read our latest news headlines" sectionClass="news" buttonLabel="View all news"}}
-	{{#*inline "out"}}
-		{{> nbItems items=items.posts}}
-	{{/inline}}
-{{/ukSection}}
+			{{> nbItems items=items.posts}}
+			
+		{{/inline}}
+	{{/ukSection}}
 
 {{/inline}}
 {{/main}}

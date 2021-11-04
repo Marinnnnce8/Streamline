@@ -2,4 +2,13 @@
 	.banner-plain {
 		min-height: 340px;
 	}
+
+	.nb-items-more {
+		margin-top: 80px;
+
+		.uk-button {
+			max-width: none;
+			width: auto;
+		}
+	}
 }

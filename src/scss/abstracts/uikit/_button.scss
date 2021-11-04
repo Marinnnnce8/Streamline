@@ -62,7 +62,10 @@
 	}
 
 	@media (max-width: $breakpoint-small-max) {
-		max-width: 280px;
+		&:not(.uk-button-text) {
+			max-width: 280px;
+			width: 100%;
+		}
 	}
 }
 

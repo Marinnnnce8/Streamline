@@ -10,20 +10,14 @@
 	}
 
 	@media (min-width: $breakpoint-medium) {
-		.uk-logo {
-
-			img {
-				width: 175px;
-			}
+		.uk-logo img {
+			width: 175px;
 		}
 	}
 
 	@media (min-width: $breakpoint-xlarge) {
-		.uk-logo {
-
-			img {
-				width: 404px;
-			}
+		.uk-logo img {
+			width: 404px;
 		}
 	}
 }

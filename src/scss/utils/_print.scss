@@ -1,12 +1,90 @@
 @media print {
 
+	*,
+	::after,
+	::before,
+	.uk-text-secondary,
+	.icon {
+		background: 0 0 !important;
+		color: $black !important;
+		fill: $black !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	.icon {
+		filter: brightness(0) !important;
+		height: 24px !important;
+	}
+
 	.header,
 	.footer,
 	.uk-button,
 	.uk-breadcrumb,
 	.uk-pagination,
+	.banner-img,
+	.banner img,
+	.uk-slideshow,
+	.switch,
 	.uk-modal,
+	.share,
+	.lightbox,
+	.items-service span,
+	.uk-card span,
+	.uk-card-media-top,
+	.items-images,
+	.items-image-links .icon,
+	.items-image-links img,
 	.nb-form {
 		display: none !important;
+	}
+
+	.banner,
+	.banner *,
+	.uk-container,
+	blockquote,
+	.items,
+	.uk-accordion-title,
+	.uk-accordion-content,
+	.uk-section {
+		max-width: none !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
+
+	.banner,
+	.items-image-link {
+		min-height: auto !important;
+	}
+
+	.banner .uk-flex-right\@l {
+		justify-content: flex-start !important;
+	}
+
+	.items-service,
+	.items-numbers .uk-grid>div,
+	.uk-card-body {
+		padding: $global-small-margin !important;
+	}
+
+	.items {
+		&-service {
+			height: auto !important;
+
+			.uk-text-small {
+				transform: none;
+				opacity: 1;
+			}
+		}
+
+		&-numbers {
+			.number {
+				font-size: 28px !important;
+			}
+
+			.uk-grid>div {
+				filter: brightness(0) !important;
+			}
+		}
 	}
 }

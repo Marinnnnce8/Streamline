@@ -11,7 +11,13 @@
 
 	<meta name="description" content="This page is called {{page.title}}">
 
-	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="./css/uikit-theme.min.css" />
 	<link rel="stylesheet" href="./css/mmenu-theme.min.css" />
@@ -39,7 +45,7 @@
 
 				<div class="uk-navbar-left">
 					<a href="./" class="uk-navbar-item uk-logo uk-position-relative">
-						<img src="{{logo}}" alt="{{nb.siteName}} Logo">
+						<img src="{{logo}}" alt="{{nb.siteName}} Logo" width="405" height="110" loading="lazy">
 					</a>
 				</div>
 
@@ -171,36 +177,7 @@
 		<div class="mmenu-bg" role="presentation"></div>
 	</div>
 
-	<svg class="svg">
-		<clipPath id="videoGoldShape" clipPathUnits="objectBoundingBox"><path d="M0.999,0.336 C0.62,1,0.392,1,-0.001,0.91 L-0.001,0.831 C-0.001,0.831,0.22,0.961,0.484,0.825 C0.748,0.689,0.999,0.009,0.999,0.009 L0.999,0.336"></path></clipPath>
-	</svg>
-	<svg class="svg">
-		<clipPath id="videoShape" clipPathUnits="objectBoundingBox"><path d="M1,1 H0 V0.225 C0,0.225,0.238,0.277,0.503,0.246 C0.767,0.216,1,0.109,1,0.109 V1"></path></clipPath>
-	</svg>
-	<svg class="svg">
-		<clipPath id="homeHeroShape" clipPathUnits="objectBoundingBox"><path d="M0,0.001 H1 V0.818 C1,0.818,0.762,0.951,0.5,0.987 C0.238,1,0,0.977,0,0.977 V0.001"></path></clipPath>
-	</svg>	
-	<svg class="svg">
-		<clipPath id="homeHeroGoldShape" clipPathUnits="objectBoundingBox"><path d="M1,0.327 C0.621,0.99,0.393,1,0,0.901 L0,0.822 C0,0.822,0.22,0.952,0.485,0.816 C0.749,0.68,1,0,1,0 L1,0.327"></path></clipPath>
-	</svg>	
-	<svg class="svg">
-		<clipPath id="homeHeroBlueShape" clipPathUnits="objectBoundingBox"><path d="M1,0.087 C0.624,1,0.39,1,0.001,0.809 L0.001,0.774 C0.396,1,0.624,0.945,1,0.005 L1,0.087"></path></clipPath>
-	</svg>	
-	<svg class="svg">
-		<clipPath id="largeHeroShape" clipPathUnits="objectBoundingBox"><path d="M0,0.001 H1 L1,0.717 C1,0.717,0.762,0.923,0.5,0.98 C0.239,1,0,0.965,0,0.965 L0,0.001"></path></clipPath>
-	</svg>
-	<svg class="svg">
-		<clipPath id="largeHeroGoldShape" clipPathUnits="objectBoundingBox"><path d="M1,0.328 C0.621,0.991,0.393,1,0,0.901 L0,0.823 C0,0.823,0.22,0.952,0.485,0.816 C0.749,0.681,1,0.001,1,0.001 L1,0.328"></path></clipPath>
-	</svg>	
-	<svg class="svg">
-		<clipPath id="largeHeroBlueShape" clipPathUnits="objectBoundingBox"><path d="M1,0.088 C0.623,1,0.389,1,0,0.81 L0,0.775 C0.395,1,0.624,0.946,1,0.006 L1,0.088"></path></clipPath>
-	</svg>
-	<svg class="svg">
-  		<clipPath id="footerGoldShape" clipPathUnits="objectBoundingBox"><path d="M1,0.342 C0.621,1,0.393,1,0,0.89 L0,0.809 C0,0.809,0.22,0.99,0.485,0.849 C0.749,0.708,1,0.004,1,0.004 L1,0.342"></path></clipPath>
-	</svg>	
-	<svg class="svg">
-		<clipPath id="footerBlueShape" clipPathUnits="objectBoundingBox"><path d="M1,1 H0 V0.705 C0,0.705,0.238,1,0.502,0.829 C0.767,0.648,1,0.004,1,0.004 V1"></path></clipPath>
-	</svg>
+	{{> SVGshapes}}
 
 
 	<script src="./js/uikit.min.js"></script>
