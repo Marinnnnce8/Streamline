@@ -2,6 +2,14 @@
 	"template": {
 		"name": "nb-styleguide"
 	},
+	"breadcrumbs": [
+		{
+			"name": "category",
+			"title": "Category",
+			"url": "#"
+		}
+	],
+	"h1": "Internal styleguide page",
 	"intro": "This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating the reading of the main page content.",
 	"share": {
 		"title": "Share page on:",

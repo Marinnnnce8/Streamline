@@ -125,11 +125,13 @@ html:not(.show-menu) .mmenu-overlay {
 
 	&.uk-button-primary {
 		color: $white !important;
-		max-width: 240px;
 		font-size: 18px;
 		padding-left: 25px;
 		width: 100%;
 		margin-bottom: 50px;
+		&:not(.uk-button-text) {
+			max-width: 240px;
+		}
 
 		.icon {
 			width: 17px;
@@ -138,7 +140,10 @@ html:not(.show-menu) .mmenu-overlay {
 
 	&.uk-button-secondary {
 		border-radius: 0;
-		max-width: 320px;
+
+		&:not(.uk-button-text) {
+			max-width: 100%;
+		}
 
 		.icon {
 			width: $global-gutter;

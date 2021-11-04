@@ -72,16 +72,20 @@
 
 			{{#if page.banner}}
 				{{> banner}}
-				{{#if (neq page.name "home")}}
-					{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-medium-top"}}
-						{{#*inline "out"}}
-							{{> ukBreadcrumb}}
-							{{#if (eq page.template.name "nb-styleguide")}}
-							<h1>{{page.h1}}</h1>
-							{{/if}}
-						{{/inline}}
-					{{/ukContainer}}				
-				{{/if}}
+			{{/if}}
+			{{#if (neq page.name "home")}}
+				{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-medium-top"}}
+					{{#*inline "out"}}
+						{{> ukBreadcrumb}}
+					{{/inline}}
+				{{/ukContainer}}				
+			{{/if}}
+			{{#if (eq page.template.name "nb-styleguide")}}
+				{{#> ukContainer size=(default page.ukContainer ukContainer)}}
+					{{#*inline "out"}}
+						<h1>{{page.h1}}</h1>
+					{{/inline}}
+				{{/ukContainer}}
 			{{/if}}
 
 			{{#> main}}{{/main}}
