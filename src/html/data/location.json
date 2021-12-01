@@ -1,0 +1,8 @@
+{
+	"h1": "Location",
+	"banner": {
+		"size": "small",
+		"src": "./img/gateway-banner.png",
+		"plain": true
+	}
+}

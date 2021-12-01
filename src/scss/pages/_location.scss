@@ -1,0 +1,11 @@
+.template-location {
+	a:not(.uk-accordion-title) {
+		@include link-hover;
+	}
+
+	@media (min-width: $breakpoint-large) {
+		.banner-plain {
+			padding-top: 220px;
+		}
+	}
+}
