@@ -2,6 +2,10 @@
 	background-color: $off-white;
 	margin-bottom: -255px;
 
+	[data-uk-nb-items] .uk-grid {
+		box-shadow: $global-large-box-shadow;
+	}
+
 	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-small-max) {
 		[data-uk-nb-items] .uk-grid>div {
 			&:nth-of-type(odd) {
